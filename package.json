@@ -21,8 +21,8 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "start": "craco start",
-    "build": "craco build",
+    "start": "start",
+    "build": "build",
     "test": "jest --coverage",
     "test:watch": "jest --watch --coverage",
     "eject": "react-scripts eject"
