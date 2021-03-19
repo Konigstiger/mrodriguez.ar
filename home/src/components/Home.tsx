@@ -1,4 +1,8 @@
-//import './Home.css';
+import './Home.css';    //already imports Backgrounds.css
+
+import Card from './Card';
+
+
 //<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet"></link>
 // import url(https://afeld.github.io/emoji-css/emoji.css) 
 
@@ -7,6 +11,7 @@
 
 import portrait from "../images/mrodriguez-portrait-small.jpg";
 import largePortrait from "../images/mrodriguez-large.jpg";
+import picTest from "../images/fef.png";
 
 function Home() {
     return (
@@ -64,39 +69,19 @@ function Home() {
                 </div>
             </div>
 
+
             <div className="w-full lg:w-2/5">
-                {/* this works */}
                 {/* <img src={portrait} alt="mr" /> */}
                 <img src={largePortrait} alt="mr" className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block" />
             </div>
 
+
             {/* esto se podria transformar en un lindo componente, para usar en tipo posts */}
-            <div id="card "
-                className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-red opacity-90 mx-6 lg:mx-0">
-                <div className="p-4 md:p-12 text-center lg:text-left">
-                    {/* Image for mobile view */}
-                    <div className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
-                        style={{ backgroundImage: `url(${portrait})` }}></div>
-
-                    <h1 className="text-3xl font-bold pt-8 lg:pt-0">Titulo Tarjeta</h1>
-
-                    {/* Classy divider */}
-                    <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-gray-500 opacity-25"></div>
-
-                    <p>Subtitulo</p>
-
-                    <p className="pt-4 text-base font-semibold flex items-center justify-center lg:justify-start">
-                        <svg className="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24">
-                            <path
-                                d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z" />
-                        </svg>Senior Software Developer</p>
-
-                        <p className="pt-4 text-sm">This should be regular text. It is just an experiment for creating a component for Cards.</p>
-                        <p className="pt-4 text-sm">Maybe Tailiwind already has something premade, but this is lots of fun.</p>
-                        <p className="pt-4 text-sm">-- Mariano</p>
-
-                </div>
+            <div id="card">
+                <Card 
+                    photo={picTest}
+                    title="This is a Card"
+                    subtitle="This is a subtitle" />
             </div>
         </div>
 
