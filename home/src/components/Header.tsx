@@ -1,7 +1,7 @@
 // import './Header.css';
 // import Logo from "../images/logo.svg";
 
-function Header() {
+const Header: React.FC = () => {
   return (
 	<nav className="bg-gray-800 p-2 mt-0 fixed w-full z-10 top-0">
 		<div className="container mx-auto flex flex-wrap items-center">
