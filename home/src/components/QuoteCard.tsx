@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import useAxios from "axios-hooks";
 
-interface IConsumerCardProps {
+interface IQuoteCardProps {
     endpoint: string
 }
 
-const ConsumerCard: React.FC<IConsumerCardProps> = (props) => {
+const QuoteCard: React.FC<IQuoteCardProps> = (props) => {
     const [{ data, loading, error }, refetch] = useAxios(props.endpoint);
 
     // TODO: disable on production
@@ -17,13 +17,9 @@ const ConsumerCard: React.FC<IConsumerCardProps> = (props) => {
 
     return (
         <div>
-            {/* this doesnt work? Why? */}
-            {/* <input onClick={refetch}>refetch</input> */}
-            {/* <pre></pre> */}
             {JSON.stringify(data, null, 2)}
-            
         </div>
     );
 }
 
-export default ConsumerCard
+export default QuoteCard

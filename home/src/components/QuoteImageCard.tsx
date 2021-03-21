@@ -13,7 +13,6 @@ interface IQuoteImageCard {
 
 const QuoteImageCard: React.FC<IQuoteImageCard> = (props) => {
     return (
-        // nah, el problema esta en el componente
         <div className="bg-gray-200 flex justify-center items-center">
 
             <div className="max-w-2xl bg-white border-2 border-gray-300 p-5 rounded-md tracking-wide shadow-lg">
@@ -25,7 +24,7 @@ const QuoteImageCard: React.FC<IQuoteImageCard> = (props) => {
                         <h4 id="title" className="text-xl font-semibold mb-2">{props.title}</h4>
                         <p id="text" className="text-gray-800 mt-2">{props.text}</p>
                         <div className="flex mt-5">
-                            <img alt="avatar" className="w-6 rounded-full border-2 border-gray-300" src={demoAuthor} />
+                            <img alt="avatar" className="w-6 rounded-full border-2 border-gray-300" src={props.authorPic?props.authorPic:demoAuthor} />
                             <p className="ml-3">{props.name}</p>
                         </div>
                     </div>

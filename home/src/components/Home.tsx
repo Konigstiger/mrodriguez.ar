@@ -9,7 +9,9 @@ import QuoteImageCard from './QuoteImageCard';
 
 import portrait from "../images/mrodriguez-portrait-small.jpg";
 import largePortrait from "../images/mrodriguez-large.jpg";
-import demoPic from "../images/mountain-200.jpg";
+import mountainPic from "../images/mountain-200.jpg";
+import platoPic from "../images/plato-200.png";
+
 import React from 'react';
 
 import Divider from '@material-ui/core/Divider';
@@ -75,7 +77,6 @@ function Home() {
                     {/* UNSURE creo que esto tiene un abuso de padding, no te deja juntar tarjetas  */}
                     <div className="mx-auto lg:mx-0 w-4/5 border-b-2 border-gray-200 opacity-25"></div>
 
-
                     <p className="pt-8 text-sm">I'm a Software Developer experienced in several programming languages and industries.</p>
                     <p className="pt-8 text-sm">I have great interest in UI/UX Design as complement to my frontend and general design skills. The mix between art and science always fascinated me.</p>
 
@@ -104,14 +105,23 @@ function Home() {
                 <QuoteImageCard
                     title="Quote"
                     text="Only the dead have seen the end of war."
-                    name="Plato"></QuoteImageCard>
+                    name="Plato"
+                    authorPic={platoPic}
+                    ></QuoteImageCard>
             </div>
-
             <div className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-90 mx-6 lg:mx-0">
                 <QuoteImageCard
                     title="Quote"
-                    text="Las guerras se ganan antes de ser iniciadas."
-                    name="Sun Tzu"></QuoteImageCard>
+                    text="War must be won before it begins."
+                    name="Sun Tzu"
+                    authorPic={mountainPic}></QuoteImageCard>
+            </div>
+            <div className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-90 mx-6 lg:mx-0">
+                <QuoteImageCard
+                    title="Personal Opinion"
+                    text="Hamburguers are Delicious, but specially with mayo."
+                    name="Mariano Rodriguez"
+                    authorPic={portrait}></QuoteImageCard>
             </div>
 
         </div>

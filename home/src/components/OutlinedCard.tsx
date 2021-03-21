@@ -5,7 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-import ConsumerCard from './ConsumerCard';
+import QuoteCard from './QuoteCard';
 import Container from '@material-ui/core/Container';
 
 const endpoint1: string = 'https://localhost:44369/api/weather/now';
@@ -42,9 +42,9 @@ const OutlinedCard: React.FC<IOutlinedCardProps> = (props) => {
                 </Typography>
 
                 <Container id="Financial">
-                    <ConsumerCard
+                    <QuoteCard
                         endpoint={endpoint2}>
-                    </ConsumerCard>
+                    </QuoteCard>
                 </Container>
 
             </CardContent>
