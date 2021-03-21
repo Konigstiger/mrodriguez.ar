@@ -1,6 +1,7 @@
 import portrait from "../images/mrodriguez-portrait-small.jpg";
 import demoPic from "../images/mountain-200.jpg";
 import demoAuthor from "../images/plato-200.png";
+import { AccessAlarmTwoTone } from "@material-ui/icons";
 
 interface IQuoteImageCard {
     title: string
@@ -12,8 +13,8 @@ interface IQuoteImageCard {
 
 const QuoteImageCard: React.FC<IQuoteImageCard> = (props) => {
     return (
-
-        <div className="min-h-screen bg-gray-200 flex justify-center items-center">
+        // nah, el problema esta en el componente
+        <div className="bg-gray-200 flex justify-center items-center">
 
             <div className="max-w-2xl bg-white border-2 border-gray-300 p-5 rounded-md tracking-wide shadow-lg">
                 <div id="header" className="flex">
