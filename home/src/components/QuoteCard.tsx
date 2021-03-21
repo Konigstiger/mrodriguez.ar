@@ -12,6 +12,7 @@ const QuoteCard: React.FC<IQuoteCardProps> = (props) => {
     // TODO: disable on production
     console.log(data);
 
+   
     if (loading) return <div>Loading...</div>;
     if (error) return <div>Error!</div>;
 

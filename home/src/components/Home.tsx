@@ -92,31 +92,22 @@ function Home() {
                 <img src={largePortrait} alt="mr" className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block" />
             </div>
 
-
-            <div className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-90 mx-6 lg:mx-0">
-                <OutlinedCard
-                    title="Financials"
-                    subtitle="Stock information"
-                    text={text_card_01}
-                    endpoint={endpoint2}></OutlinedCard>
-            </div>
-
             <div className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-90 mx-6 lg:mx-0">
                 <QuoteImageCard
-                    title="Quote"
+                    title="Quote Quote Quote Quote"
                     text="Only the dead have seen the end of war."
                     name="Plato"
                     authorPic={platoPic}
                 ></QuoteImageCard>
             </div>
-            <div className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-90 mx-6 lg:mx-0">
+            <div className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl opacity-90 mx-6 lg:mx-0 ">
                 <QuoteImageCard
                     title="Quote"
                     text="War must be won before it begins."
                     name="Sun Tzu"
                     authorPic={mountainPic}></QuoteImageCard>
             </div>
-            <div className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-90 mx-6 lg:mx-0">
+            <div className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-bac opacity-90 mx-6">
                 <QuoteImageCard
                     title="Personal Opinion"
                     text="Hamburguers are Delicious, but specially with mayo."
@@ -124,9 +115,29 @@ function Home() {
                     authorPic={portrait}></QuoteImageCard>
             </div>
 
-            <button className="text-red-500 bg-transparent border border-solid border-red-500 hover:bg-red-500 hover:text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                <i className="fas fa-heart"></i> Small
-            </button>
+
+            <div className="container px-4 mx-auto">
+                <div className="flex flex-wrap">
+                    <div className="w-1/3 px-4">
+                        <span className="text-sm block my-4 p-3 text-blueGray-700 rounded border border-solid border-blueGray-100">One of three columns</span>
+                    </div>
+                    <div className="w-1/3 px-4">
+                        <span className="text-sm block my-4 p-3 text-blueGray-700 rounded border border-solid border-blueGray-100">One of three columns</span>
+                    </div>
+                    <div className="w-1/3 px-0">
+                        <span className="text-sm block my-4 p-3 text-blueGray-700 rounded border border-solid border-blueGray-100">One of three columns</span>
+
+                        <div className="w-full lg:w-1/1 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-90 mx-6 lg:mx-0">
+                            <OutlinedCard
+                                title="Financials"
+                                subtitle="Stock information"
+                                text={text_card_01}
+                                endpoint={endpoint2}></OutlinedCard>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
         </div>
 
