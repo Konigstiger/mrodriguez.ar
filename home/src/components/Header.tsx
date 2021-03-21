@@ -1,4 +1,3 @@
-// import './Header.css';
 // import Logo from "../images/logo.svg";
 
 const Header: React.FC = () => {
@@ -9,7 +8,6 @@ const Header: React.FC = () => {
 			<div className="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
 				<ul className="list-reset flex justify-between flex-1 md:flex-none items-center">
 					<li className="mr-3">
-
 						<a className="inline-block py-2 px-4 text-white no-underline p-12"
 							href="https://blog.mrodriguez.ar/">Blog</a>
 					</li>
@@ -24,7 +22,6 @@ const Header: React.FC = () => {
 
 				</ul>
 			</div>
-			
 		</div>
 	</nav>
   );

@@ -1,14 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-interface ICardProps {
+interface ICustomCardProps {
     photo: any,
     title: string
     subtitle?: string
 }
 
-// worked well
-//const Card = (props: ICardProps) => {
-const Card: React.FC<ICardProps> = (props) => {
+const CustomCard: React.FC<ICustomCardProps> = (props) => {
 
     return (
 
@@ -20,12 +18,9 @@ const Card: React.FC<ICardProps> = (props) => {
         // background-graph-paper
         // background-plus
 
-
         <div className="background-plus w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-red opacity-90 mx-6 lg:mx-0">
             <div className="p-4 md:p-12 text-center lg:text-left">
                 {/* Image for mobile view */}
-                <div className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"></div>
-
                 <h1 className="text-3xl font-bold pt-8 lg:pt-0">{props.title}</h1>
 
                 {/* divider */}
@@ -75,4 +70,4 @@ const Card: React.FC<ICardProps> = (props) => {
     )
 }
 
-export default Card
+export default CustomCard

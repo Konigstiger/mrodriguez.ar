@@ -1,17 +1,26 @@
 import './Home.css';    //already imports Backgrounds.css
 
-import Card from './Card';
-
+import CustomCard from './CustomCard';
+import OutlinedCard from './OutlinedCard';
+import QuoteImageCard from './QuoteImageCard';
 
 //<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet"></link>
 // import url(https://afeld.github.io/emoji-css/emoji.css) 
 
-// esto es para typescript!
-// @import url('https://fonts.googleapis.com/css?family=Roboto');
-
 import portrait from "../images/mrodriguez-portrait-small.jpg";
 import largePortrait from "../images/mrodriguez-large.jpg";
-import picTest from "../images/fef.png";
+import demoPic from "../images/mountain-200.jpg";
+import React from 'react';
+
+// texts
+const text_card_01: string = "We are consuming an API to retrieve the following information.";
+const text_card_02: string = "This should be a more practical approach, showcasing something important.";
+
+const endpoint1: string = 'https://localhost:44369/api/weather/now';
+const endpoint2: string = 'https://localhost:44369/api/weather/stock';
+const endpoint3: string = 'https://jsonplaceholder.typicode.com/posts';
+const endpoint4: string = "https://reqres.in/api/users?delay=1";
+
 
 function Home() {
     return (
@@ -30,7 +39,7 @@ function Home() {
                     <h1 className="text-3xl font-bold pt-8 lg:pt-0">Mariano Rodriguez</h1>
 
                     {/* Classy divider */}
-                    <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-gray-500 opacity-25"></div>
+                    <div className="lg:mx-0 flex border-b-2 border-gray-500 opacity-25"></div>
 
                     <p className="pt-4 text-base font-semibold flex items-center justify-center lg:justify-start">
                         <svg className="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +55,8 @@ function Home() {
                                 d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z" />
                         </svg>UI/UX Designer</p>
 
-                    <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-gray-500 opacity-25"></div>
+                    {/* Classy divider */}
+                    <div className="lg:mx-0 flex border-b-2 border-gray-500 opacity-25"></div>
 
 
                     <p className="pt-4 text-base font-semibold flex items-center justify-center lg:justify-start"><svg
@@ -71,19 +81,28 @@ function Home() {
 
 
             <div className="w-full lg:w-2/5">
-                {/* <img src={portrait} alt="mr" /> */}
                 <img src={largePortrait} alt="mr" className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block" />
             </div>
 
 
-            {/* esto se podria transformar en un lindo componente, para usar en tipo posts */}
-            <div id="card">
-                <Card 
-                    photo={picTest}
-                    title="This is a Card"
-                    subtitle="This is a subtitle" />
+            <div className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-90 mx-6 lg:mx-0">
+                <OutlinedCard
+                    title="Financials"
+                    subtitle="Stock information"
+                    text={text_card_01}
+                    endpoint={endpoint2}></OutlinedCard>
             </div>
+
+            <div className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-90 mx-6 lg:mx-0">
+                <QuoteImageCard
+                    title="Quote"
+                    text="Only the dead have seen the end of war."
+                    name="Plato"></QuoteImageCard>
+            </div>
+
         </div>
+
+
 
     );
 }
