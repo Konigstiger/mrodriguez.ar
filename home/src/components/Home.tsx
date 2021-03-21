@@ -47,7 +47,7 @@ function Home() {
                     <Divider variant="middle"></Divider>
 
 
-                    
+
 
                     <p className="pt-4 text-base font-semibold flex items-center justify-center lg:justify-start">
                         <svg className="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +107,7 @@ function Home() {
                     text="Only the dead have seen the end of war."
                     name="Plato"
                     authorPic={platoPic}
-                    ></QuoteImageCard>
+                ></QuoteImageCard>
             </div>
             <div className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-90 mx-6 lg:mx-0">
                 <QuoteImageCard
@@ -123,6 +123,10 @@ function Home() {
                     name="Mariano Rodriguez"
                     authorPic={portrait}></QuoteImageCard>
             </div>
+
+            <button className="text-red-500 bg-transparent border border-solid border-red-500 hover:bg-red-500 hover:text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                <i className="fas fa-heart"></i> Small
+            </button>
 
         </div>
 

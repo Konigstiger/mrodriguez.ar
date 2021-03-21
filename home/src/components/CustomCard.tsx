@@ -9,11 +9,6 @@ interface ICustomCardProps {
 const CustomCard: React.FC<ICustomCardProps> = (props) => {
 
     return (
-
-        // <div className="w-full lg:w-2/5">
-        //     <img src={largePortrait} alt="mr" className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block" />
-        // </div>
-
         //available css backgrounds to append:
         // background-graph-paper
         // background-plus

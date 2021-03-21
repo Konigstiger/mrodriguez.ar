@@ -12,7 +12,6 @@ import portrait from "../images/mrodriguez-portrait-small.jpg";
 import demoPic from "../images/mountain-200.jpg";
 //import demoAuthor from "../images/plato-200.png";
 
-
 const App: React.FC = () => {
 
   return (
