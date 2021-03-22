@@ -8,8 +8,10 @@ interface IQuoteImageCard {
     subtitle?: string
     text: string
     name: string
-    authorPic?      // TODO: add this and remove the problem of the imports that create-react-app generates
+    authorPic?     
 }
+
+// TODO: Adaptar este patron para lo de la derecha >>>>
 
 const QuoteImageCard: React.FC<IQuoteImageCard> = (props) => {
     return (

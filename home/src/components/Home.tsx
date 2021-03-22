@@ -1,3 +1,5 @@
+import React from 'react';
+
 import './Home.css';    //already imports Backgrounds.css
 
 import CustomCard from './CustomCard';
@@ -11,8 +13,6 @@ import portrait from "../images/mrodriguez-portrait-small.jpg";
 import largePortrait from "../images/mrodriguez-large.jpg";
 import mountainPic from "../images/mountain-200.jpg";
 import platoPic from "../images/plato-200.png";
-
-import React from 'react';
 
 import Divider from '@material-ui/core/Divider';
 
