@@ -1,17 +1,33 @@
-
 import PropTypes from "prop-types";
+import React, { ReactElement } from "react";
+import Button from '@material-ui/core/Button';
 
 // components
-
 import TableDropdown from "../Dropdowns/TableDropdown";
 
-export default function CardTable({ color }) {
+function TheButton() : ReactElement<any> | any {
+  return <Button id="theButton" key="theButton" type="button">The Button</Button>;
+}
+
+const theButton = TheButton();
+
+export enum ThemeColors {
+  light = "light",
+  dark = "dark"
+}
+
+interface ICardTableProps {
+  //color: string
+  color?: ThemeColors
+}
+
+export const CardTable: React.FC<ICardTableProps> = ( props ) => {
   return (
     <>
       <div
         className={
           "relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded " +
-          (color === "light" ? "bg-white" : "bg-lightBlue-900 text-white")
+          (props.color === ThemeColors.light ? "bg-white" : "bg-lightBlue-900 text-white")
         }
       >
         <div className="rounded-t mb-0 px-4 py-3 border-0">
@@ -20,7 +36,7 @@ export default function CardTable({ color }) {
               <h3
                 className={
                   "font-semibold text-lg " +
-                  (color === "light" ? "text-blueGray-700" : "text-white")
+                  (props.color === "light" ? "text-blueGray-700" : "text-white")
                 }
               >
                 Card Tables
@@ -29,6 +45,9 @@ export default function CardTable({ color }) {
           </div>
         </div>
         <div className="block w-full overflow-x-auto">
+          {/* The button to use as reference, I hope */}
+          DrawButton();
+
           {/* Projects table */}
           <table className="items-center w-full bg-transparent border-collapse">
             <thead>
@@ -36,7 +55,7 @@ export default function CardTable({ color }) {
                 <th
                   className={
                     "px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
-                    (color === "light"
+                    (props.color === "light"
                       ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
                       : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
                   }
@@ -46,7 +65,7 @@ export default function CardTable({ color }) {
                 <th
                   className={
                     "px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
-                    (color === "light"
+                    (props.color === "light"
                       ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
                       : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
                   }
@@ -56,7 +75,7 @@ export default function CardTable({ color }) {
                 <th
                   className={
                     "px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
-                    (color === "light"
+                    (props.color === "light"
                       ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
                       : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
                   }
@@ -66,7 +85,7 @@ export default function CardTable({ color }) {
                 <th
                   className={
                     "px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
-                    (color === "light"
+                    (props.color === "light"
                       ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
                       : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
                   }
@@ -76,7 +95,7 @@ export default function CardTable({ color }) {
                 <th
                   className={
                     "px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
-                    (color === "light"
+                    (props.color === "light"
                       ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
                       : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
                   }
@@ -86,7 +105,7 @@ export default function CardTable({ color }) {
                 <th
                   className={
                     "px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
-                    (color === "light"
+                    (props.color === "light"
                       ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
                       : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
                   }
@@ -104,7 +123,7 @@ export default function CardTable({ color }) {
                   <span
                     className={
                       "ml-3 font-bold " +
-                      +(color === "light" ? "text-blueGray-600" : "text-white")
+                      +(props.color === "light" ? "text-blueGray-600" : "text-white")
                     }
                   >
                     Argon Design System
@@ -154,7 +173,7 @@ export default function CardTable({ color }) {
                   </div>
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right">
-                  <TableDropdown />
+                  <TableDropdown button={theButton} children={props} />
                 </td>
               </tr>
               <tr>
@@ -167,7 +186,7 @@ export default function CardTable({ color }) {
                   <span
                     className={
                       "ml-3 font-bold " +
-                      +(color === "light" ? "text-blueGray-600" : "text-white")
+                      +(props.color === ThemeColors.light ? "text-blueGray-600" : "text-white")
                     }
                   >
                     Angular Now UI Kit PRO
@@ -218,7 +237,7 @@ export default function CardTable({ color }) {
                   </div>
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right">
-                  <TableDropdown />
+                  <TableDropdown button={theButton} children={props} />
                 </td>
               </tr>
               <tr>
@@ -231,7 +250,7 @@ export default function CardTable({ color }) {
                   <span
                     className={
                       "ml-3 font-bold " +
-                      +(color === "light" ? "text-blueGray-600" : "text-white")
+                      +(props.color === ThemeColors.light ? "text-blueGray-600" : "text-white")
                     }
                   >
                     Black Dashboard Sketch
@@ -281,7 +300,7 @@ export default function CardTable({ color }) {
                   </div>
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right">
-                  <TableDropdown />
+                  <TableDropdown button={theButton} children={props} />
                 </td>
               </tr>
               <tr>
@@ -294,7 +313,7 @@ export default function CardTable({ color }) {
                   <span
                     className={
                       "ml-3 font-bold " +
-                      +(color === "light" ? "text-blueGray-600" : "text-white")
+                      +(props.color === ThemeColors.light ? "text-blueGray-600" : "text-white")
                     }
                   >
                     React Material Dashboard
@@ -345,7 +364,7 @@ export default function CardTable({ color }) {
                   </div>
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right">
-                  <TableDropdown />
+                  <TableDropdown button={theButton} children={props} />
                 </td>
               </tr>
               <tr>
@@ -358,7 +377,7 @@ export default function CardTable({ color }) {
                   <span
                     className={
                       "ml-3 font-bold " +
-                      +(color === "light" ? "text-blueGray-600" : "text-white")
+                      +(props.color === ThemeColors.light ? "text-blueGray-600" : "text-white")
                     }
                   >
                     React Material Dashboard
@@ -409,7 +428,7 @@ export default function CardTable({ color }) {
                   </div>
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right">
-                  <TableDropdown />
+                  <TableDropdown button={theButton} children={props} />
                 </td>
               </tr>
             </tbody>
@@ -421,9 +440,11 @@ export default function CardTable({ color }) {
 }
 
 CardTable.defaultProps = {
-  color: "light",
+  color: ThemeColors.light
 };
 
 CardTable.propTypes = {
-  color: PropTypes.oneOf(["light", "dark"]),
+  //color: PropTypes.oneOf(["light","dark"]),
+  //color: PropTypes.oneOfType([ThemeColors.light.toString(), ThemeColors.dark.toString()])
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.any])
 };

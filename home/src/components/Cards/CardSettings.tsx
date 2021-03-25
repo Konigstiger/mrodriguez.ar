@@ -1,4 +1,5 @@
-
+import '../../../src/assets/styles/index.css';
+import "../../../src/index.css";
 // components
 
 export default function CardSettings() {

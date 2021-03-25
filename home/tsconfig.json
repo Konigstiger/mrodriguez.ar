@@ -21,7 +21,10 @@
     "jsx": "react-jsx",
     "sourceMap": true,
     "noImplicitAny": false,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "types": [
+      "google.maps"
+    ]
   },
   "include": [
     "src",
