@@ -13,7 +13,6 @@
     "@material-ui/icons": "^4.11.2",
     "@popperjs/core": "2.4.4",
     "@tailwindcss/forms": "^0.2.1",
-    "@types/node": "^14.14.35",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.2",
     "axios": "^0.21.1",
@@ -32,7 +31,9 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "styled-components": "^5.2.1",
-    "web-vitals": "^1.0.1"
+    "tailwind-colors": "^1.1.0",
+    "web-vitals": "^1.0.1",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "lint": "eslint .",
@@ -72,6 +73,7 @@
     "@testing-library/user-event": "^12.1.10",
     "@types/google.maps": "^3.44.2",
     "@types/jest": "^26.0.21",
+    "@types/node": "^14.14.37",
     "@types/react-router-dom": "^5.1.5",
     "@types/styled-components": "^5.1.9",
     "autoprefixer": "^9.8.6",

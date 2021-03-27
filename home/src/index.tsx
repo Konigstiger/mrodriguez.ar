@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 
+// components
+import App from './App';
+
+import * as themes from './theme/schema.json';
+import { setToLS } from './utils/storage';
+
+
+import './index.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "assets/styles/tailwind.css";
 

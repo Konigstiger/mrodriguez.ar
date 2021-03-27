@@ -6,15 +6,22 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Footer from './components/Footer';
 
+import styled, { ThemeProvider } from "styled-components";
+import WebFont from 'webfontloader';
+import { useEffect, useState } from 'react';
+
+
 function App() {
   return (
+
     <div>
-      <header>
-        <Header />
-      </header>
-      <body>
-        <Home />
-      </body>
+          <header>
+            <Header />
+          </header>
+          <body>
+            <Home />
+          </body>
+
     </div>
   );
 }
