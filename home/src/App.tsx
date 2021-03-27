@@ -1,5 +1,5 @@
 // import React from 'react';
-// import './App.css';
+//import './App.css';
 
 // TODO: Add these components
 import Header from './components/Header';
@@ -8,12 +8,13 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <header>
         <Header />
-        <Home />
-        <Footer />
       </header>
+      <body>
+        <Home />
+      </body>
     </div>
   );
 }
