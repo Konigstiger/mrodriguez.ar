@@ -1,26 +1,22 @@
-import React from 'react';
+// import React from 'react';
+//import './App.css';
 
-import './App.css';
-import './Backgrounds.css';
-
+// TODO: Add these components
 import Header from './components/Header';
 import Home from './components/Home';
 import Footer from './components/Footer';
 
-
-import portrait from "../images/mrodriguez-portrait-small.jpg";
-import demoPic from "../images/mountain-200.jpg";
-//import demoAuthor from "../images/plato-200.png";
-
-const App: React.FC = () => {
-
+function App() {
   return (
-    <div className="App">
+    <div>
+      <header>
         <Header />
+      </header>
+      <body>
         <Home />
-        <Footer />
+      </body>
     </div>
   );
-};
+}
 
 export default App;
