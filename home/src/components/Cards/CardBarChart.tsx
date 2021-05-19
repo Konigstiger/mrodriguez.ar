@@ -27,7 +27,6 @@ const state = {
 
 export default function CardBarChart() {
   return (
-    <>
       <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
         <div className="rounded-t mb-0 px-4 py-3 bg-transparent">
           <div className="flex flex-wrap items-center">
@@ -75,12 +74,9 @@ export default function CardBarChart() {
                   }
                 }}
               />
-
-
             </canvas>
           </div>
         </div>
       </div>
-    </>
   );
 }

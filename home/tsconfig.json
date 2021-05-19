@@ -22,9 +22,7 @@
     "sourceMap": true,
     "noImplicitAny": false,
     "noFallthroughCasesInSwitch": true,
-    "types": [
-      "google.maps"
-    ]
+    "types": []
   },
   "include": [
     "src",
