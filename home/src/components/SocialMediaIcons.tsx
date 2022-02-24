@@ -1,9 +1,11 @@
 
-function Footer() {
+function SocialMediaIcons() {
     return (
 
+        //p-4 md:p-12 text-center lg:text-left
         <div className="p-1 px-2 py-2 mt-0 mx-auto">
 
+            {/* before "container mx-auto flex flex-wrap items-center"*/}
             <div className="container mx-auto flex flex-wrap items-center">
 
                 <div className="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
@@ -43,4 +45,4 @@ function Footer() {
     );
 }
 
-export default Footer;
+export default SocialMediaIcons;
