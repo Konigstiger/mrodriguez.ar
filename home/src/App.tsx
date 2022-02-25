@@ -6,7 +6,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Footer from './components/Footer';
 
-function App() {
+export default function App() {
   return (
     <div>
       <header>
@@ -18,5 +18,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

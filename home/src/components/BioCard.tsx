@@ -3,8 +3,7 @@ import portrait from "../images/mrodriguez-portrait-small.jpg";
 import largePortrait from "../images/mrodriguez-large.jpg";
 
 import SocialMediaIcons from '../components/SocialMediaIcons';
-import StackedCard from "./StackedCard";
-import HorizontalCard from "./HorizontalCard";
+
 
 function BioCard() {
     return (
@@ -41,6 +40,7 @@ function BioCard() {
                     
                     <p className="pt-8 text-sm">I'm a Software Developer experienced in several programming languages and industries.</p>
                     <SocialMediaIcons />
+
                 </div>
                 
             </div>

@@ -2,8 +2,10 @@
 //import illustration from "../images/csharp-02.png";
 import portrait from "../images/mrodriguez-portrait-small.jpg";
 
+import Avatar from '@mui/material/Avatar';
 
-function HorizontalCard(props) {
+
+export default function HorizontalCard(props) {
     return (
         <div className="max-w-sm w-full lg:max-w-full lg:flex">
             <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
@@ -22,7 +24,10 @@ function HorizontalCard(props) {
                 </div>
                 {/* Haceme componente! */}
                 <div className="flex items-center">
-                    <img className="w-10 h-10 rounded-full mr-4" src={portrait} alt="Avatar" />
+                    {/* <img className="w-10 h-10 rounded-full mr-4" src={portrait} alt="Avatar" /> */}
+                    {/* <Avatar alt="Mariano Rodriguez" src={portrait} sx={{ width: 64, height: 64 }} /> */}
+                    <Avatar alt="Mariano Rodriguez" src={portrait} sx={{ width: 128, height: 128 }} />
+                    
                     <div className="text-sm">
                         <p className="text-gray-900 leading-none">Mariano Rodriguez</p>
                         <p className="text-gray-600">Feb 24</p>
@@ -32,6 +37,3 @@ function HorizontalCard(props) {
         </div>
     );
 }
-
-export default HorizontalCard;
-
