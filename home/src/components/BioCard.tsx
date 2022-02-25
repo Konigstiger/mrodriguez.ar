@@ -2,9 +2,6 @@
 import portrait from "../images/mrodriguez-portrait-small.jpg";
 import largePortrait from "../images/mrodriguez-large.jpg";
 
-import thingy from "../images/socialite.png";
-
-
 import SocialMediaIcons from '../components/SocialMediaIcons';
 import StackedCard from "./StackedCard";
 import HorizontalCard from "./HorizontalCard";
@@ -43,7 +40,7 @@ function BioCard() {
                     <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-200 opacity-25"></div>
                     
                     <p className="pt-8 text-sm">I'm a Software Developer experienced in several programming languages and industries.</p>
-                    
+                    <SocialMediaIcons />
                 </div>
                 
             </div>

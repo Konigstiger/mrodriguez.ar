@@ -2,10 +2,7 @@
 import classnames from "classnames";
 import illustration from "../images/csharp-02.png";
 
-function StackedCard(props) {
-
-    //See: https://stackoverflow.com/questions/69035860/can-i-pass-the-tailwind-classname-as-props-in-react
-    
+function StackedCard(props) {    
     // defaults and dynamic styles from props, if any.
     const dynamicClass = classnames(
         "max-w-sm rounded overflow-hidden shadow-lg",
