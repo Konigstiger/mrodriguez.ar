@@ -22,6 +22,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 // importing option 2
 // import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
 
+import Timeline from "./Timeline";
+
 export default function Articles() {
     return (
         <div>
@@ -32,7 +34,23 @@ export default function Articles() {
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
-                        <Typography>Accordion 1</Typography>
+                        <Typography>Work Experience</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Timeline />
+                        {/* <Typography>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            malesuada lacus ex, sit amet blandit leo lobortis eget.
+                        </Typography> */}
+                    </AccordionDetails>
+                </Accordion>
+                <Accordion>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel2a-content"
+                        id="panel2a-header"
+                    >
+                        <Typography>Interests</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         {/* <Typography>
@@ -42,28 +60,13 @@ export default function Articles() {
                         <StackedCard bgColor="bg-grey-100" img={illustration} title="Awesome stuff" text="This will probably look awesome, I know." />
                     </AccordionDetails>
                 </Accordion>
-                <Accordion>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel2a-content"
-                        id="panel2a-header"
-                    >
-                        <Typography>Accordion 2</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                            malesuada lacus ex, sit amet blandit leo lobortis eget.
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
                 <Accordion disabled>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel3a-content"
                         id="panel3a-header"
                     >
-                        <Typography>Disabled Accordion</Typography>
+                        <Typography>Extra</Typography>
                     </AccordionSummary>
                 </Accordion>
             </div>
