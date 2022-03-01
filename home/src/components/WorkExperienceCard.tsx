@@ -3,24 +3,53 @@ import Button from "@mui/material/Button";
 import TopAccentAlert from "./TopAccentAlert";
 import WorkExperienceRenderer from "./WorkExperienceRenderer";
 
-import IconButton from '@mui/material/IconButton';
-import CloseIcon from '@mui/icons-material/Close';
-
-
+import IconButton from "@mui/material/IconButton";
+import CloseIcon from "@mui/icons-material/Close";
+import ToggleButton from "@mui/material/ToggleButton";
 
 import { useState } from "react";
 
 export default function WorkExperienceCard(props) {
-  const [state, setState] = useState("start");
+
+  const [selected, setSelected] = useState(false);
 
   return (
     <div>
-      <p>{props.title}</p>
-      <p>
-        {props.dateStart} - {props.dateEnd}
-      </p>
+      <div>
+        <p>{props.title}</p>
+        <p>
+          {props.dateStart} - {props.dateEnd}
+        </p>
+      </div>
+      <div>
+        <ToggleButton
+          className="float-right"
+        //   className="float-right -top-12"
+          size="small"
+          value="check"
+          selected={selected}
+          onChange={() => {
+            setSelected(!selected);
+          }}
+        >
+            details
 
-      {state === "start" && (
+        </ToggleButton>
+      </div>
+
+      {/* {selected === false && ( */}
+      {/* <ToggleButton
+          value="check"
+          selected={selected}
+          onChange={() => {
+            setSelected(!selected);
+          }}
+        >
+          details
+        </ToggleButton> */}
+      {/* )} */}
+
+      {/* {state === "start" && (
         <Button
           variant="outlined"
           onClick={() => {
@@ -29,21 +58,22 @@ export default function WorkExperienceCard(props) {
         >
           Details
         </Button>
-      )}
+      )} */}
 
-      {state === "expanded" && (
+      {/* {state === "expanded" && ( */}
+      {selected === true && (
         <div>
           <WorkExperienceRenderer items={props.details} />
 
-            <IconButton 
-                className="float-right"
-                aria-label="close"
-                onClick={() => {
-                    setState("start");
-                    }}
-              >
-                <CloseIcon />
-            </IconButton>
+          {/* <IconButton
+            className="float-right"
+            aria-label="close"
+            onClick={() => {
+              setState("start");
+            }}
+          >
+            <CloseIcon />
+          </IconButton> */}
 
           {/* <Button
             variant="outlined"
@@ -55,7 +85,6 @@ export default function WorkExperienceCard(props) {
           </Button> */}
         </div>
       )}
-
 
       {/* {state === "expanded" && (
           <TopAccentAlert 

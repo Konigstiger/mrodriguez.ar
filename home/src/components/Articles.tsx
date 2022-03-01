@@ -29,15 +29,15 @@ export default function Articles() {
     <div>
       {/* <TitledAlert title="Warning" message="You are losing your cool, man."/> */}
 
-      <div className="flex flex-col lg:grid lg:gap-4 2xl:gap-6 lg:grid-cols-4 2xl:row-span-2 2xl:pb-8 ml-2 pt-4 px-6">
-        <div className="bg-gray-300 lg:order-1 lg:row-span-1 2xl:row-span-1 lg:col-span-2 rounded-lg shadow-xl mb-5 lg:mb-0 py-4 px-4">
+      <div className="flex flex-col lg:grid lg:gap-4 2xl:gap-6 lg:grid-cols-4 2xl:row-span-2 2xl:pb-8 ml-0 pt-2 px-1">
+        <div className="bg-gray-300 lg:order-1 lg:row-span-1 2xl:row-span-1 lg:col-span-2 rounded-lg shadow-xl mb-5 lg:mb-0 py-2 px-2">
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <Typography className="bg-gray-800 text-white font-bold px-4 py-2">
+              <Typography className="bg-gray-800 text-white font-bold px-2 py-2">
                 Work Experience
               </Typography>
             </AccordionSummary>
@@ -51,7 +51,7 @@ export default function Articles() {
               aria-controls="panel2a-content"
               id="panel2a-header"
             >
-              <Typography className="bg-gray-800 text-white font-bold px-4 py-2">
+              <Typography className="bg-gray-800 text-white font-bold px-2 py-2">
                 Interests
               </Typography>
             </AccordionSummary>

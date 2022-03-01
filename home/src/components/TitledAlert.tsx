@@ -7,7 +7,7 @@ export default function TitledAlert(props) {
         {props.title}
       </div>
       <div className="border border-t-0 border-gray-400 rounded-b bg-gray-100 px-4 py-3 text-gray-800">
-        <p>{props.message}</p>
+        <p className="text-sm">{props.message}</p>
       </div>
     </div>
   );
