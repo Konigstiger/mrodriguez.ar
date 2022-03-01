@@ -5,12 +5,18 @@ import StickyFooter from "./StickyFooter";
 
 import Articles from "./Articles";
 
+
+
 export default function Home() {
+
   return (
     <div>
       {/* <div className="bg-gray-700"> */}
+
         <BioCard />
       {/* </div> */}
+
+
       <div className="bg-gray-600">
         <Articles />
       </div>

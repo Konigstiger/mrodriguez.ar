@@ -4,8 +4,7 @@ import largePortrait from "../images/mrodriguez-large.jpg";
 
 import SocialMediaIcons from '../components/SocialMediaIcons';
 
-// import Timeline from "./Timeline";
-import Timeline2 from "./Timeline2";
+import Timeline from "./Timeline";
 
 //import Banner from "./Banner";
 

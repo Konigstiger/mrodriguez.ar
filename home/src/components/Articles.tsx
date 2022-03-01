@@ -20,13 +20,14 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 // import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
 
 import Timeline from "./Timeline";
-import Timeline2 from "./Timeline2";
 
 import Banner from "./Banner";
+
 
 export default function Articles() {
   return (
     <div>
+      {/* <TitledAlert title="Warning" message="You are losing your cool, man."/> */}
 
       <div className="flex flex-col lg:grid lg:gap-4 2xl:gap-6 lg:grid-cols-4 2xl:row-span-2 2xl:pb-8 ml-2 pt-4 px-6">
         <div className="bg-gray-300 lg:order-1 lg:row-span-1 2xl:row-span-1 lg:col-span-2 rounded-lg shadow-xl mb-5 lg:mb-0 py-4 px-4">
@@ -36,10 +37,12 @@ export default function Articles() {
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <Typography>Work Experience</Typography>
+              <Typography className="bg-gray-800 text-white font-bold px-4 py-2">
+                Work Experience
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Timeline2 />
+              <Timeline />
             </AccordionDetails>
           </Accordion>
           <Accordion>
@@ -48,7 +51,9 @@ export default function Articles() {
               aria-controls="panel2a-content"
               id="panel2a-header"
             >
-              <Typography>Interests</Typography>
+              <Typography className="bg-gray-800 text-white font-bold px-4 py-2">
+                Interests
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
               {/* <Typography>...</Typography> */}
@@ -70,7 +75,6 @@ export default function Articles() {
             text="Currently I'm working on projects using Microsoft technologies."
           />
         </div>
-
       </div>
     </div>
   );
