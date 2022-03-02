@@ -7,6 +7,12 @@ import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import ToggleButton from "@mui/material/ToggleButton";
 
+import ApartmentIcon from '@mui/icons-material/Apartment';
+import DateRangeIcon from '@mui/icons-material/DateRange';
+import BadgeIcon from '@mui/icons-material/Badge';
+import LocalPoliceIcon from '@mui/icons-material/LocalPolice';
+import VerifiedIcon from '@mui/icons-material/Verified';
+
 import { useState } from "react";
 
 export default function WorkExperienceCard(props) {
@@ -16,10 +22,11 @@ export default function WorkExperienceCard(props) {
   return (
     <div>
       <div>
-        <p>{props.title}</p>
-        <p>
-          {props.dateStart} - {props.dateEnd}
-        </p>
+
+        <div className="flex align-middle text-sm"><BadgeIcon />{props.title}</div>
+        <div className="flex align-middle text-sm">
+          <DateRangeIcon/>{props.dateStart} - {props.dateEnd}
+        </div>
       </div>
       <div>
         <ToggleButton

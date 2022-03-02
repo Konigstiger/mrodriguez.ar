@@ -2,16 +2,15 @@ import "../index.css";
 
 import Chip from "@mui/material/Chip";
 import WorkExperienceCard from "./WorkExperienceCard";
-import Stack from "@mui/material/Stack";
 
 export default function Timeline() {
   const workExperience_tg = [
     { desc: "◾ Client: Insala" },
     { desc: "Software maintenance of legacy live project." },
     { desc: "Rewrite and upgrade technology from scratch." },
-    {
-      desc: "Tech: C#, asp.net core, Azure DevOps (CI/CD), Tailwind CSS, React, Redis.",
-    },
+    // {
+    //   desc: "Tech: C#, asp.net core, Azure DevOps (CI/CD), Tailwind CSS, React, Redis.",
+    // },
   ];
 
   const workExperience_flux = [
@@ -21,7 +20,7 @@ export default function Timeline() {
     {
       desc: "Created functionality to retrieve and authorize using signed certificates from KeyVault, refactored code, presented an in-company .net introduction to other employees with different stacks.",
     },
-    { desc: "Tech: C# (.netcore), Azure DevOps (CI/CD), Key Vault." },
+    // { desc: "Tech: C# (.netcore), Azure DevOps (CI/CD), Key Vault." },
   ];
 
   const workExperience_southworks = [
@@ -141,8 +140,9 @@ export default function Timeline() {
     {
       desc: "Developed a J2EE web-based system to measure technical indicators and collaborate in diagnostics of patients with potential neuropsychological problems.",
     },
-    { desc: "Tech: J2EE, IBM WebSphere, IBM DB/2." },
+    // { desc: "Tech: J2EE, IBM WebSphere, IBM DB/2." },
   ];
+
 
   return (
     <div className="w-full">
@@ -155,11 +155,35 @@ export default function Timeline() {
               </h1>
             </div>
           </div>
-          {/* color de linea */}
           <div className="w-px h-full bg-gray-300"></div>
         </div>
         <div className="order-1 bg-gray-100 rounded-lg shadow-xl w-full px-4 py-4 border-t-0 mb-4">
           <p className="mb-2 text-xl font-bold text-gray-600">TechGenies</p>
+          {/* chips start */}
+          <div className="container mx-auto my-1 p-0 flex flex-row">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              .netcore
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+                react
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              Azure
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              Tailwind CSS
+              </div>
+            </div>
+          </div>
+          {/* chips end */}
+
           <p className="text-gray-700">
             <WorkExperienceCard
               title="Senior Software Developer"
@@ -169,12 +193,6 @@ export default function Timeline() {
               details={workExperience_tg}
             />
           </p>
-          <div className="grid gap-1 grid-cols-2 pr-1 mt-1">
-            <Chip label="netcore" variant="outlined" size="small" />
-            <Chip label="react" variant="outlined" size="small" />
-            <Chip label="azure" variant="outlined" size="small" />
-            <Chip label="tailwind" variant="outlined" size="small" />
-          </div>
         </div>
       </div>
 
@@ -199,11 +217,30 @@ export default function Timeline() {
               </svg>
             </div>
           </div>
-          {/* color de linea */}
           <div className="w-px h-full bg-gray-300"></div>
         </div>
         <div className="order-1 bg-neutral-400 rounded-lg shadow-xl w-full px-4 py-4 border-0 mb-4">
           <p className="mb-2 text-xl font-bold text-gray-600">Flux IT</p>
+          {/* chips start */}
+          <div className="container mx-auto my-1 p-0 flex flex-row">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              netcore
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+                KeyVault
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+                Microservices
+              </div>
+            </div>
+          </div>
+          {/* chips end */}
+
           <p className="text-gray-700">
             <WorkExperienceCard
               title="Senior Software Developer"
@@ -213,11 +250,6 @@ export default function Timeline() {
               details={workExperience_flux}
             />
           </p>
-          <div className="grid gap-1 grid-cols-2 pr-1 mt-1">
-            <Chip label="netcore" variant="outlined" size="small" />
-            <Chip label="azure" variant="outlined" size="small" />
-            <Chip label="keyvault" variant="outlined" size="small" />
-          </div>
         </div>
       </div>
 
@@ -234,6 +266,30 @@ export default function Timeline() {
         </div>
         <div className="order-1 bg-gray-100 rounded-lg shadow-xl w-full px-4 py-4 border-0 mb-4">
           <p className="mb-2 text-xl font-bold text-gray-600">SOUTHWORKS</p>
+          {/* chips start */}
+          <div className=" mx-auto my-1 p-0 flex flex-wrap">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              .netcore
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+                Azure
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+                React
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+                TypeScript
+              </div>
+            </div>
+          </div>
+          {/* chips end */}          
           <p className="text-gray-700">
             <WorkExperienceCard
               title="Senior Software Developer / UI-UX Designer"
@@ -243,12 +299,6 @@ export default function Timeline() {
               details={workExperience_southworks}
             />
           </p>
-          <div className="grid gap-1 grid-cols-2 pr-1 mt-1">
-            <Chip label="React" variant="outlined" size="small" />
-            <Chip label="Azure" variant="outlined" size="small" />
-            <Chip label="TS" variant="outlined" size="small" />
-            <Chip label="C#" variant="outlined" size="small" />
-          </div>
         </div>
       </div>
 
@@ -267,6 +317,25 @@ export default function Timeline() {
           <p className="mb-2 text-xl font-bold text-gray-600">
             Registro General de la Provincia de Cordoba
           </p>
+          {/* chips start */}
+          <div className="container mx-auto my-1 p-0 flex flex-row">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              C#
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+                WPF
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+                C Wrappers
+              </div>
+            </div>
+          </div>
+          {/* chips end */}
           <p className="text-gray-700">
             <WorkExperienceCard
               title="Senior Software Developer"
@@ -276,11 +345,6 @@ export default function Timeline() {
               details={workExperience_registro}
             />
           </p>
-          <div className="grid gap-1 grid-cols-2 pr-1 mt-1">
-            <Chip label="C#" variant="outlined" size="small" />
-            <Chip label="WPF" variant="outlined" size="small" />
-            <Chip label="MS SQL" variant="outlined" size="small" />
-          </div>
         </div>
       </div>
 
@@ -298,6 +362,25 @@ export default function Timeline() {
         </div>
         <div className="order-1 bg-gray-100 rounded-lg shadow-xl w-full px-4 py-4 border-0 mb-4">
           <p className="mb-2 text-xl font-bold text-gray-600">Exet S.R.L.</p>
+          {/* chips start */}
+          <div className="container mx-auto my-1 p-0 flex flex-row">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              Oracle
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+                Oracle Service Bus
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+                MS SQL Server
+              </div>
+            </div>
+          </div>
+          {/* chips end */}     
           <p className="text-gray-700">
             <WorkExperienceCard
               title="Senior Software Developer"
@@ -307,11 +390,6 @@ export default function Timeline() {
               details={workExperience_exet}
             />
           </p>
-          <div className="grid gap-1 grid-cols-2 pr-1 mt-1">
-            <Chip label="Oracle" variant="outlined" size="small" />
-            <Chip label="C#" variant="outlined" size="small" />
-            <Chip label="SSIS" variant="outlined" size="small" />
-          </div>
         </div>
       </div>
 
@@ -330,6 +408,30 @@ export default function Timeline() {
           <p className="mb-2 text-xl font-bold text-gray-600">
             Banco de la Provincia de Cordoba
           </p>
+          {/* chips start */}
+          <div className="container mx-auto my-1 p-0 flex flex-row">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              C#
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+                MS SQL Server
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              VB.NET
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              Oracle
+              </div>
+            </div>
+          </div>
+          {/* chips end */}
           <p className="text-gray-700">
             <WorkExperienceCard
               title="Senior Software Developer (outsourced)"
@@ -340,18 +442,11 @@ export default function Timeline() {
             />
           </p>
           {/* .NET C#, VB.NET, ASP.NET, MVC, SQL Server, Oracle, SSIS, Web Services */}
-          <div className="grid gap-1 grid-cols-2 pr-1 mt-1">
+          {/* <div className="grid gap-1 grid-cols-2 pr-1 mt-1">
             <Chip label="C#" variant="outlined" size="small" />
             <Chip label="VB.net" variant="outlined" size="small" />
             <Chip label="MS SQL" variant="outlined" size="small" />
             <Chip label="Oracle" variant="outlined" size="small" />
-          </div>
-
-          {/* hacer andar esto */}
-          {/* <div className="grid gap-1 grid-cols-2 pr-1 mt-1 font-medium py-1 rounded-full text-gray-700 bg-gray-100 border border-gray-300">
-            <div className="text-xs font-normal leading-none flex-initial">
-              Hello!
-            </div>
           </div> */}
 
 
@@ -367,14 +462,32 @@ export default function Timeline() {
               </h1>
             </div>
           </div>
-          {/* color de linea */}
           <div className="w-px h-full bg-gray-300"></div>
         </div>
-        {/* <div className="pb-8 "> */}
         <div className="order-1 bg-gray-100 rounded-lg shadow-xl w-full px-4 py-4 border-0 mb-4">
           <p className="mb-2 text-xl font-bold text-gray-600">
             Horovitz, Kravetz and Associates
           </p>
+          {/* chips start */}
+          <div className="container mx-auto my-1 p-0 flex flex-row">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              ASP Classic
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+                MS SQL Server
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              Web Services
+              </div>
+            </div>
+          </div>
+          {/* chips end */}
+
           <p className="text-gray-700">
             <WorkExperienceCard
               title="Freelance Software Developer"
@@ -384,11 +497,6 @@ export default function Timeline() {
               details={workExperience_hka}
             />
           </p>
-          {/* Tech: ASP Classic, SQL Server, Web Services. */}
-          <div className="grid gap-1 grid-cols-2 pr-1 mt-1">
-            <Chip label="ASP" variant="outlined" size="small" />
-            <Chip label="MS SQL" variant="outlined" size="small" />
-          </div>
         </div>
       </div>
 
@@ -401,14 +509,37 @@ export default function Timeline() {
               </h1>
             </div>
           </div>
-          {/* color de linea */}
+          
           <div className="w-px h-full bg-gray-300"></div>
         </div>
-        {/* <div className="pb-8 "> */}
         <div className="order-1 bg-neutral-400 rounded-lg shadow-xl w-full px-4 py-4 border-0 mb-4">
           <p className="mb-2 text-xl font-bold text-gray-600">
             Hewlett-Packard
           </p>
+          {/* chips start */}
+          <div className="container mx-auto my-1 p-0 bg-white flex flex-row">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              C#
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+                ETL
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              MS SQL
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              J2EE
+              </div>
+            </div>
+          </div>
+          {/* chips end */}
           <p className="text-gray-700">
             <WorkExperienceCard
               title="Software Developer"
@@ -418,13 +549,7 @@ export default function Timeline() {
               details={workExperience_hp}
             />
           </p>
-          {/* .NET C#. ASP.NET. MVC. ETL processes, SQL Server, Oracle. */}
-          <div className="grid gap-1 grid-cols-2 pr-1 mt-1">
-            <Chip label="C#" variant="outlined" size="small" />
-            <Chip label="ETL" variant="outlined" size="small" />
-            <Chip label="MS SQL" variant="outlined" size="small" />
-            <Chip label="J2EE" variant="outlined" size="small" />
-          </div>
+          
         </div>
       </div>
 
@@ -437,12 +562,29 @@ export default function Timeline() {
               </h1>
             </div>
           </div>
-          {/* color de linea */}
           <div className="w-px h-full bg-gray-300"></div>
         </div>
-        {/* <div className="pb-8 "> */}
         <div className="order-1 bg-neutral-400 rounded-lg shadow-xl w-full px-4 py-4 border-0 mb-4">
           <p className="mb-2 text-xl font-bold text-gray-600">AR Consultores</p>
+          {/* chips start */}
+          <div className="container mx-auto my-1 p-0 flex flex-row">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              ASP Classic
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+                MS SQL Server
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              Web Services
+              </div>
+            </div>
+          </div>
+          {/* chips end */}          
           <p className="text-gray-700">
             <WorkExperienceCard
               title="Software Developer"
@@ -452,13 +594,6 @@ export default function Timeline() {
               details={workExperience_arconsultores}
             />
           </p>
-          {/* Tech: Asp.NET, C#, Asp classic, SQL Server, Oracle, SSIS, Web Services. */}
-          <div className="grid gap-1 grid-cols-2 pr-1 mt-1">
-            <Chip label="Asp.net" variant="outlined" size="small" />
-            <Chip label="MS SQL" variant="outlined" size="small" />
-            <Chip label="Oracle" variant="outlined" size="small" />
-            <Chip label="Asp" variant="outlined" size="small" />
-          </div>
         </div>
       </div>
 
@@ -471,11 +606,34 @@ export default function Timeline() {
               </h1>
             </div>
           </div>
-          {/* color de linea */}
           <div className="w-px h-full bg-gray-300"></div>
         </div>
         <div className="order-1 bg-neutral-400 rounded-lg shadow-xl w-full px-4 py-4 border-0 mb-4">
           <p className="mb-2 text-xl font-bold text-gray-600">Gruppo IT</p>
+          {/* chips start */}
+          <div className="container mx-auto my-1 p-0 flex flex-row">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              ASP.net
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+                MS SQL Server
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              XML
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              GDI+
+              </div>
+            </div>
+          </div>
+          {/* chips end */}          
           <p className="text-gray-700">
             <WorkExperienceCard
               title="Software Developer"
@@ -485,12 +643,6 @@ export default function Timeline() {
               details={workExperience_gruppoit}
             />
           </p>
-          <div className="grid gap-1 grid-cols-2 pr-1 mt-1">
-            <Chip label="Asp.net" variant="outlined" size="small" />
-            <Chip label="SQL Server" variant="outlined" size="small" />
-            <Chip label="XML" variant="outlined" size="small" />
-            <Chip label="GDI+" variant="outlined" size="small" />
-          </div>
         </div>
       </div>
 
@@ -499,17 +651,41 @@ export default function Timeline() {
           <div>
             <div className="flex items-center justify-center w-12 h-8 border rounded-md">
               <h1 className="mx-auto font-semibold text-lg text-gray-600">
-                2008
+                2002
               </h1>
             </div>
           </div>
           <div className="w-px h-full bg-gray-300"></div>
         </div>
         <div className="order-1 bg-neutral-400 rounded-lg shadow-xl w-full px-4 py-4 border-0 mb-4">
-          <p className="mb-2 text-xl font-bold text-gray-600">
+          <p className="mb-2 text-xl font-bold text-gray-600 ">
             University UTN-FRC
           </p>
-          <p className="text-gray-700">
+          {/* chips start */}
+          <div className="container mx-auto my-1 p-0 flex flex-row">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              J2EE
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+                IBM DB/2
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              WebSphere
+              </div>
+            </div>
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+              <div className="flex-initial max-w-full leading-none text-xs font-normal">
+              XML
+              </div>
+            </div>
+          </div>
+          {/* chips end */}              
+          <p className="text-gray-700 text-base font-normal">
             <WorkExperienceCard
               title="Junior Researcher"
               company="UTN FRC"
@@ -518,11 +694,11 @@ export default function Timeline() {
               details={workExperience_utn}
             />
           </p>
-          <div className="grid gap-1 grid-cols-2 pr-1 mt-1">
+          {/* <div className="grid gap-1 grid-cols-2 pr-1 mt-1">
             <Chip label="J2EE" variant="outlined" size="small" />
             <Chip label="DB/2" variant="outlined" size="small" />
             <Chip label="WebSphere" variant="outlined" size="small" />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
