@@ -4,9 +4,6 @@ import largePortrait from "../images/mrodriguez-large.jpg";
 
 import SocialMediaIcons from '../components/SocialMediaIcons';
 
-import Timeline from "./Timeline";
-
-//import Banner from "./Banner";
 
 function BioCard() {
     return (
@@ -43,7 +40,6 @@ function BioCard() {
                     
                     <p className="pt-8 text-sm">I'm a Software Developer experienced in several programming languages and industries.</p>
                     <SocialMediaIcons />
-                    {/* <Timeline2 /> */}
 
                 </div>
                 

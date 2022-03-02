@@ -1,6 +1,5 @@
 import "../index.css";
 
-import Chip from "@mui/material/Chip";
 import WorkExperienceCard from "./WorkExperienceCard";
 
 export default function Timeline() {
@@ -131,7 +130,6 @@ export default function Timeline() {
     {
       desc: "Online ticket selling portal. Generated prototypes for tickets and simple anti-forgery mechanisms (guilloches)",
     },
-    // { desc: "Tech: ASP.NET (Webforms), SQL Server, XML, GDI+." },
   ];
 
   const workExperience_utn = [
@@ -157,10 +155,10 @@ export default function Timeline() {
           </div>
           <div className="w-px h-full bg-gray-300"></div>
         </div>
-        <div className="order-1 bg-gray-100 rounded-lg shadow-xl w-full px-4 py-4 border-t-0 mb-4">
+        <div className="order-1 bg-neutral-400 rounded-lg w-full px-4 py-4 border mb-4">
           <p className="mb-2 text-xl font-bold text-gray-600">TechGenies</p>
           {/* chips start */}
-          <div className="container mx-auto my-1 p-0 flex flex-row">
+          <div className="container mx-auto my-1 p-0 flex flex-wrap">
             <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               .netcore
@@ -199,9 +197,9 @@ export default function Timeline() {
       <div className="flex">
         <div className="flex flex-col items-center mr-4">
           <div>
-            <div className="flex items-center justify-center w-12 h-8 border rounded-full">
-              {/* <h1 className="mx-auto font-semibold text-lg text-gray-600"></h1> */}
-              <svg
+            <div className="flex items-center justify-center w-12 h-8 border rounded-md">
+              <h1 className="mx-auto font-bold text-lg text-gray-600">2021</h1>
+              {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-6 h-6 text-gray-500"
                 fill="none"
@@ -214,15 +212,15 @@ export default function Timeline() {
                   stroke-width="2"
                   d="M17 13l-5 5m0 0l-5-5m5 5V6"
                 />
-              </svg>
+              </svg> */}
             </div>
           </div>
           <div className="w-px h-full bg-gray-300"></div>
         </div>
-        <div className="order-1 bg-neutral-400 rounded-lg shadow-xl w-full px-4 py-4 border-0 mb-4">
+        <div className="order-1 bg-neutral-400 rounded-lg w-full px-4 py-4 border mb-4">
           <p className="mb-2 text-xl font-bold text-gray-600">Flux IT</p>
           {/* chips start */}
-          <div className="container mx-auto my-1 p-0 flex flex-row">
+          <div className="container mx-auto my-1 p-0 flex flex-wrap">
             <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               netcore
@@ -264,7 +262,7 @@ export default function Timeline() {
           </div>
           <div className="w-px h-full bg-gray-300"></div>
         </div>
-        <div className="order-1 bg-gray-100 rounded-lg shadow-xl w-full px-4 py-4 border-0 mb-4">
+        <div className="order-1 bg-neutral-400 rounded-lg w-full px-4 py-4 border mb-4">
           <p className="mb-2 text-xl font-bold text-gray-600">SOUTHWORKS</p>
           {/* chips start */}
           <div className=" mx-auto my-1 p-0 flex flex-wrap">
@@ -313,12 +311,12 @@ export default function Timeline() {
           </div>
           <div className="w-px h-full bg-gray-300"></div>
         </div>
-        <div className="order-1 bg-neutral-400 rounded-lg shadow-xl w-full px-4 py-4 border-0 mb-4">
+        <div className="order-1 bg-neutral-400 rounded-lg w-full px-4 py-4 border mb-4">
           <p className="mb-2 text-xl font-bold text-gray-600">
             Registro General de la Provincia de Cordoba
           </p>
           {/* chips start */}
-          <div className="container mx-auto my-1 p-0 flex flex-row">
+          <div className="container mx-auto my-1 p-0 flex flex-wrap">
             <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               C#
@@ -360,10 +358,10 @@ export default function Timeline() {
           {/* color de linea */}
           <div className="w-px h-full bg-gray-300"></div>
         </div>
-        <div className="order-1 bg-gray-100 rounded-lg shadow-xl w-full px-4 py-4 border-0 mb-4">
+        <div className="order-1 bg-neutral-400 rounded-lg w-full px-4 py-4 border mb-4">
           <p className="mb-2 text-xl font-bold text-gray-600">Exet S.R.L.</p>
           {/* chips start */}
-          <div className="container mx-auto my-1 p-0 flex flex-row">
+          <div className="container mx-auto my-1 p-0 flex flex-wrap">
             <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               Oracle
@@ -404,12 +402,12 @@ export default function Timeline() {
           </div>
           <div className="w-px h-full bg-gray-300"></div>
         </div>
-        <div className="order-1 bg-neutral-400 rounded-lg shadow-xl w-full px-4 py-4 border-0 mb-4">
+        <div className="order-1 bg-neutral-400 rounded-lg w-full px-4 py-4 border mb-4">
           <p className="mb-2 text-xl font-bold text-gray-600">
             Banco de la Provincia de Cordoba
           </p>
           {/* chips start */}
-          <div className="container mx-auto my-1 p-0 flex flex-row">
+          <div className="container mx-auto my-1 p-0 flex flex-wrap">
             <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               C#
@@ -441,15 +439,6 @@ export default function Timeline() {
               details={workExperience_bank_cba}
             />
           </p>
-          {/* .NET C#, VB.NET, ASP.NET, MVC, SQL Server, Oracle, SSIS, Web Services */}
-          {/* <div className="grid gap-1 grid-cols-2 pr-1 mt-1">
-            <Chip label="C#" variant="outlined" size="small" />
-            <Chip label="VB.net" variant="outlined" size="small" />
-            <Chip label="MS SQL" variant="outlined" size="small" />
-            <Chip label="Oracle" variant="outlined" size="small" />
-          </div> */}
-
-
         </div>
       </div>
 
@@ -464,12 +453,12 @@ export default function Timeline() {
           </div>
           <div className="w-px h-full bg-gray-300"></div>
         </div>
-        <div className="order-1 bg-gray-100 rounded-lg shadow-xl w-full px-4 py-4 border-0 mb-4">
+        <div className="order-1 bg-neutral-400 rounded-lg w-full px-4 py-4 border mb-4">
           <p className="mb-2 text-xl font-bold text-gray-600">
             Horovitz, Kravetz and Associates
           </p>
           {/* chips start */}
-          <div className="container mx-auto my-1 p-0 flex flex-row">
+          <div className="container mx-auto my-1 p-0 flex flex-wrap">
             <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               ASP Classic
@@ -512,7 +501,7 @@ export default function Timeline() {
           
           <div className="w-px h-full bg-gray-300"></div>
         </div>
-        <div className="order-1 bg-neutral-400 rounded-lg shadow-xl w-full px-4 py-4 border-0 mb-4">
+        <div className="order-1 bg-neutral-400 rounded-lg w-full px-4 py-4 border mb-4">
           <p className="mb-2 text-xl font-bold text-gray-600">
             Hewlett-Packard
           </p>
@@ -530,7 +519,7 @@ export default function Timeline() {
             </div>
             <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              MS SQL
+              MS SQL Server
               </div>
             </div>
             <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
@@ -558,16 +547,18 @@ export default function Timeline() {
           <div>
             <div className="flex items-center justify-center w-12 h-8 border rounded-md">
               <h1 className="mx-auto font-semibold text-lg text-gray-600">
-                2009
+                2010
               </h1>
             </div>
           </div>
           <div className="w-px h-full bg-gray-300"></div>
         </div>
-        <div className="order-1 bg-neutral-400 rounded-lg shadow-xl w-full px-4 py-4 border-0 mb-4">
+        {/* shadow style */}
+        {/* <div className="order-1 bg-gray-100 rounded-lg shadow-xl w-full px-4 py-4 border-0 mb-4"> */}
+        <div className="order-1 bg-neutral-400 rounded-lg w-full px-4 py-4 border mb-4">
           <p className="mb-2 text-xl font-bold text-gray-600">AR Consultores</p>
           {/* chips start */}
-          <div className="container mx-auto my-1 p-0 flex flex-row">
+          <div className="container mx-auto my-1 p-0 flex flex-wrap">
             <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               ASP Classic
@@ -608,10 +599,10 @@ export default function Timeline() {
           </div>
           <div className="w-px h-full bg-gray-300"></div>
         </div>
-        <div className="order-1 bg-neutral-400 rounded-lg shadow-xl w-full px-4 py-4 border-0 mb-4">
+        <div className="order-1 bg-neutral-400 rounded-lg w-full px-4 py-4 border mb-4">
           <p className="mb-2 text-xl font-bold text-gray-600">Gruppo IT</p>
           {/* chips start */}
-          <div className="container mx-auto my-1 p-0 flex flex-row">
+          <div className="container mx-auto my-1 p-0 flex flex-wrap">
             <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               ASP.net
@@ -657,12 +648,12 @@ export default function Timeline() {
           </div>
           <div className="w-px h-full bg-gray-300"></div>
         </div>
-        <div className="order-1 bg-neutral-400 rounded-lg shadow-xl w-full px-4 py-4 border-0 mb-4">
+        <div className="order-1 bg-neutral-400 rounded-lg w-full px-4 py-4 border mb-4">
           <p className="mb-2 text-xl font-bold text-gray-600 ">
             University UTN-FRC
           </p>
           {/* chips start */}
-          <div className="container mx-auto my-1 p-0 flex flex-row">
+          <div className="container mx-auto my-1 p-0 flex flex-wrap">
             <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               J2EE
@@ -694,11 +685,6 @@ export default function Timeline() {
               details={workExperience_utn}
             />
           </p>
-          {/* <div className="grid gap-1 grid-cols-2 pr-1 mt-1">
-            <Chip label="J2EE" variant="outlined" size="small" />
-            <Chip label="DB/2" variant="outlined" size="small" />
-            <Chip label="WebSphere" variant="outlined" size="small" />
-          </div> */}
         </div>
       </div>
     </div>

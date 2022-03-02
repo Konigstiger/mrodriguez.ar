@@ -17,7 +17,8 @@ export default function Home() {
       {/* </div> */}
 
 
-      <div className="bg-gray-600">
+      {/* <div className="bg-gray-600"> */}
+      <div className="bg-color-03-green">
         <Articles />
       </div>
 
