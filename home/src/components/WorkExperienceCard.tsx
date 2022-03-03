@@ -33,7 +33,8 @@ export default function WorkExperienceCard(props) {
             setSelected(!selected);
           }}
         >
-          details
+          {/* details */}
+          {(selected === true) ? "Close": "Show Details"}
         </ToggleButton>
       </div>
 

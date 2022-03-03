@@ -23,7 +23,7 @@ export default function Articles() {
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <Typography className="bg-color-05-red text-color-06-white font-bold px-2 py-2">
+              <Typography className="bg-color-01-purple-dark text-color-06-white font-bold px-2 py-2">
                 Work Experience
               </Typography>
             </AccordionSummary>
@@ -37,7 +37,7 @@ export default function Articles() {
               aria-controls="panel2a-content"
               id="panel2a-header"
             >
-              <Typography className="bg-color-05-red text-color-06-white font-bold px-2 py-2">
+              <Typography className="bg-color-01-purple-dark text-color-06-white font-bold px-2 py-2">
                 Interests
               </Typography>
             </AccordionSummary>

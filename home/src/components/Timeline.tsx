@@ -72,7 +72,7 @@ export default function Timeline() {
 
   const workExperience_hka = [
     { desc: "Maintained legacy Bank and Financial software." },
-    { desc: "Tech: ASP Classic, SQL Server, Web Services." },
+    // { desc: "Tech: ASP Classic, SQL Server, Web Services." },
   ];
 
   const workExperience_hp = [
