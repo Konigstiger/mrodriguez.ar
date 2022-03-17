@@ -1,19 +1,35 @@
 import "../index.css";
 
-import BioCard from "./BioCard";
 import StickyFooter from "./StickyFooter";
 
 import Articles from "./Articles";
 
+import { useEffect } from "react";
+import { applyTheme } from "../themes/utils";
+import baseTheme from "../themes/base";
+import darkTheme from "../themes/dark";
+
+import StyledDiv from "./StyledDiv";
+import BioCard from "./BioCard";
+import StyledBioCard from "./StyledBioCard";
 
 export default function Home() {
+  useEffect(() => {
+    applyTheme(baseTheme);
+  }, []);
 
   return (
     <div>
+
       <BioCard />
 
-      <div className="bg-color-03-green">
+      <div className="bg-primary">
+        TEXT
         <Articles />
+      </div>
+
+      <div className="bg-secondary text-text-on-secondary">
+        Text on Secondary
       </div>
 
       <StickyFooter />

@@ -155,26 +155,26 @@ export default function Timeline() {
           </div>
           <div className="w-px h-full bg-gray-300"></div>
         </div>
-        <div className="order-1 bg-neutral-400 rounded-lg w-full px-4 py-4 border mb-4">
+        <div className="order-1 bg-neutral-400 rounded-lg w-full px-4 py-4 border mb-4 bg-secondary-light">
           <p className="mb-2 text-xl font-bold text-gray-600">TechGenies</p>
           {/* chips start */}
           <div className="container mx-auto my-1 p-0 flex flex-wrap">
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               .netcore
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
                 react
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               Azure
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               Tailwind CSS
               </div>
@@ -182,7 +182,7 @@ export default function Timeline() {
           </div>
           {/* chips end */}
 
-          <p className="text-gray-700">
+          <p className="text-text-on-secondary">
             <WorkExperienceCard
               title="Senior Software Developer"
               company="TechGenies"
@@ -221,17 +221,17 @@ export default function Timeline() {
           <p className="mb-2 text-xl font-bold text-gray-600">Flux IT</p>
           {/* chips start */}
           <div className="container mx-auto my-1 p-0 flex flex-wrap">
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               netcore
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
                 KeyVault
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
                 Microservices
               </div>
@@ -239,7 +239,7 @@ export default function Timeline() {
           </div>
           {/* chips end */}
 
-          <p className="text-gray-700">
+          <p className="text-text-on-secondary">
             <WorkExperienceCard
               title="Senior Software Developer"
               company="Flux IT"
@@ -266,29 +266,29 @@ export default function Timeline() {
           <p className="mb-2 text-xl font-bold text-gray-600">SOUTHWORKS</p>
           {/* chips start */}
           <div className=" mx-auto my-1 p-0 flex flex-wrap">
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               .netcore
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
                 Azure
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
                 React
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
                 TypeScript
               </div>
             </div>
           </div>
           {/* chips end */}          
-          <p className="text-gray-700">
+          <p className="text-text-on-secondary">
             <WorkExperienceCard
               title="Senior Software Developer / UI-UX Designer"
               company="SOUTHWORKS"
@@ -317,24 +317,24 @@ export default function Timeline() {
           </p>
           {/* chips start */}
           <div className="container mx-auto my-1 p-0 flex flex-wrap">
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               C#
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
                 WPF
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
                 C Wrappers
               </div>
             </div>
           </div>
           {/* chips end */}
-          <p className="text-gray-700">
+          <p className="text-text-on-secondary">
             <WorkExperienceCard
               title="Senior Software Developer"
               company="Registro General de la Provincia de Cordoba"
@@ -362,24 +362,24 @@ export default function Timeline() {
           <p className="mb-2 text-xl font-bold text-gray-600">Exet S.R.L.</p>
           {/* chips start */}
           <div className="container mx-auto my-1 p-0 flex flex-wrap">
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               Oracle
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
                 Oracle Service Bus
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
                 MS SQL Server
               </div>
             </div>
           </div>
           {/* chips end */}     
-          <p className="text-gray-700">
+          <p className="text-text-on-secondary">
             <WorkExperienceCard
               title="Senior Software Developer"
               company="Exet S.R.L."
@@ -408,29 +408,29 @@ export default function Timeline() {
           </p>
           {/* chips start */}
           <div className="container mx-auto my-1 p-0 flex flex-wrap">
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               C#
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
                 MS SQL Server
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               VB.NET
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               Oracle
               </div>
             </div>
           </div>
           {/* chips end */}
-          <p className="text-gray-700">
+          <p className="text-text-on-secondary">
             <WorkExperienceCard
               title="Senior Software Developer (outsourced)"
               company="Bank of Cordoba Province"
@@ -459,17 +459,17 @@ export default function Timeline() {
           </p>
           {/* chips start */}
           <div className="container mx-auto my-1 p-0 flex flex-wrap">
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               ASP Classic
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
                 MS SQL Server
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               Web Services
               </div>
@@ -477,7 +477,7 @@ export default function Timeline() {
           </div>
           {/* chips end */}
 
-          <p className="text-gray-700">
+          <p className="text-text-on-secondary">
             <WorkExperienceCard
               title="Freelance Software Developer"
               company="Horovitz, Kravetz and associates"
@@ -507,29 +507,29 @@ export default function Timeline() {
           </p>
           {/* chips start */}
           <div className="container mx-auto my-1 p-0 bg-white flex flex-row">
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               C#
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
                 ETL
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               MS SQL Server
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               J2EE
               </div>
             </div>
           </div>
           {/* chips end */}
-          <p className="text-gray-700">
+          <p className="text-text-on-secondary">
             <WorkExperienceCard
               title="Software Developer"
               company="Hewlett-Packard"
@@ -559,24 +559,24 @@ export default function Timeline() {
           <p className="mb-2 text-xl font-bold text-gray-600">AR Consultores</p>
           {/* chips start */}
           <div className="container mx-auto my-1 p-0 flex flex-wrap">
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               ASP Classic
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
                 MS SQL Server
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               Web Services
               </div>
             </div>
           </div>
           {/* chips end */}          
-          <p className="text-gray-700">
+          <p className="text-text-on-secondary">
             <WorkExperienceCard
               title="Software Developer"
               company="AR Consultores"
@@ -603,29 +603,29 @@ export default function Timeline() {
           <p className="mb-2 text-xl font-bold text-gray-600">Gruppo IT</p>
           {/* chips start */}
           <div className="container mx-auto my-1 p-0 flex flex-wrap">
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               ASP.net
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
                 MS SQL Server
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               XML
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               GDI+
               </div>
             </div>
           </div>
           {/* chips end */}          
-          <p className="text-gray-700">
+          <p className="text-text-on-secondary">
             <WorkExperienceCard
               title="Software Developer"
               company="Gruppo IT"
@@ -654,29 +654,29 @@ export default function Timeline() {
           </p>
           {/* chips start */}
           <div className="container mx-auto my-1 p-0 flex flex-wrap">
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               J2EE
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
                 IBM DB/2
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               WebSphere
               </div>
             </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-gray-200 text-base text-gray-700 font-medium">
+            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
               <div className="flex-initial max-w-full leading-none text-xs font-normal">
               XML
               </div>
             </div>
           </div>
           {/* chips end */}              
-          <p className="text-gray-700 text-base font-normal">
+          <p className="text-text-on-secondary text-base font-normal">
             <WorkExperienceCard
               title="Junior Researcher"
               company="UTN FRC"

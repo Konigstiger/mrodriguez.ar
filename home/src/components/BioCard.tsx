@@ -5,19 +5,19 @@ import largePortrait from "../images/mrodriguez-large.jpg";
 import SocialMediaIcons from '../components/SocialMediaIcons';
 
 
-function BioCard() {
+export default function BioCard({ ...rest }) {
     return (
-       
+
         <div className="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
 
             {/* Main Col */}
             <div id="profile"
-                className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-90 mx-6 lg:mx-0">
+                className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-primary-light opacity-90 mx-6 lg:mx-0">
 
                 <div className="p-4 md:p-12 text-center lg:text-left">
                     {/* Image for mobile view */}
                     <div className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
-                        style={{ backgroundImage:`url(${portrait})` }}></div>
+                        style={{ backgroundImage: `url(${portrait})` }}></div>
 
                     <h1 className="text-3xl font-bold pt-8 lg:pt-0">Mariano Rodriguez</h1>
                     <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
@@ -37,12 +37,12 @@ function BioCard() {
                     </svg>Cordoba, Argentina</p>
 
                     <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-200 opacity-25"></div>
-                    
+
                     <p className="pt-8 text-sm">I'm a Software Developer experienced in several programming languages and industries.</p>
                     <SocialMediaIcons />
 
                 </div>
-                
+
             </div>
 
             <div className="w-full lg:w-2/5">
@@ -53,5 +53,3 @@ function BioCard() {
 
     );
 }
-
-export default BioCard;
