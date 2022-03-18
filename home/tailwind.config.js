@@ -25,6 +25,8 @@ module.exports = {
         "text-on-primary": "var(--theme-text-on-primary)",
         "text-on-secondary": "var(--theme-text-on-secondary)",
         
+        "accent": "var(--theme-accent)",
+
         "text-base": "var(--theme-text-base)",
 
       }      

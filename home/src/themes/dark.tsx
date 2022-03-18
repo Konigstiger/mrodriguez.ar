@@ -9,6 +9,7 @@ const darkTheme = createTheme({
   secondaryDark: "#00867D",
   textOnPrimary: "#FFFFFF",
   textOnSecondary: "#000000",
+  accent: "#ED6146",
   textBase: "FFFFFF",
 });
 

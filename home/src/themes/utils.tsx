@@ -14,6 +14,7 @@ export function createTheme({
   secondaryDark,
   textOnPrimary,
   textOnSecondary,
+  accent,
   textBase,
 }) {
   return {
@@ -25,6 +26,7 @@ export function createTheme({
     "--theme-secondary-dark": secondaryDark,
     "--theme-text-on-primary": textOnPrimary,
     "--theme-text-on-secondary": textOnSecondary,
+    "--theme-accent": accent,
     "--theme-text-base": textBase,
   };
 }

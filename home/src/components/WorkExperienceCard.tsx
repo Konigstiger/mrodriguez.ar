@@ -7,6 +7,7 @@ import DateRangeIcon from "@mui/icons-material/DateRange";
 import BadgeIcon from "@mui/icons-material/Badge";
 
 import { useState } from "react";
+import { Typography } from "@mui/material";
 
 export default function WorkExperienceCard(props) {
   const [selected, setSelected] = useState(false);
@@ -16,11 +17,11 @@ export default function WorkExperienceCard(props) {
       <div>
         <div className="text-sm font-bold">
           <BadgeIcon />
-          {props.title}
+          <span className="pl-1">{props.title}</span>
         </div>
         <div className="text-sm pb-4">
           <DateRangeIcon />
-          {props.dateStart} - {props.dateEnd}
+          <span className="pl-1">{props.dateStart} - {props.dateEnd}</span>
         </div>
       </div>
       <div>
@@ -34,7 +35,7 @@ export default function WorkExperienceCard(props) {
           }}
         >
           {/* details */}
-          {(selected === true) ? "Close": "Show Details"}
+          {(selected === true) ? "Close": "Details"}
         </ToggleButton>
       </div>
 

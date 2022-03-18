@@ -13,8 +13,6 @@ export default function Header() {
 		applyTheme(baseTheme);
 	}, []);
 
-	// TODO: Ver si es facil y util tener tipo toggle (o directamente toggle!) que oculte segun state
-	// solo se veria un boton asi.
 	return (
 		<nav className="bg-gray-800 p-2 mt-0 fixed w-full z-10 top-0">
 			<div className="container mx-auto flex flex-wrap items-center">
@@ -36,7 +34,6 @@ export default function Header() {
 						</li>
 
 					</ul>
-
 
 				</div>
 				<div className="flex gap-2 justify-between">

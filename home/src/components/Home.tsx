@@ -9,9 +9,7 @@ import { applyTheme } from "../themes/utils";
 import baseTheme from "../themes/base";
 import darkTheme from "../themes/dark";
 
-import StyledDiv from "./StyledDiv";
 import BioCard from "./BioCard";
-import StyledBioCard from "./StyledBioCard";
 
 export default function Home() {
   useEffect(() => {
@@ -24,7 +22,6 @@ export default function Home() {
       <BioCard />
 
       <div className="bg-primary">
-        TEXT
         <Articles />
       </div>
 

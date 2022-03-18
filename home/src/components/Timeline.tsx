@@ -1,4 +1,5 @@
 import "../index.css";
+import Pill from "./Pill";
 
 import WorkExperienceCard from "./WorkExperienceCard";
 
@@ -7,9 +8,6 @@ export default function Timeline() {
     { desc: "◾ Client: Insala" },
     { desc: "Software maintenance of legacy live project." },
     { desc: "Rewrite and upgrade technology from scratch." },
-    // {
-    //   desc: "Tech: C#, asp.net core, Azure DevOps (CI/CD), Tailwind CSS, React, Redis.",
-    // },
   ];
 
   const workExperience_flux = [
@@ -19,7 +17,6 @@ export default function Timeline() {
     {
       desc: "Created functionality to retrieve and authorize using signed certificates from KeyVault, refactored code, presented an in-company .net introduction to other employees with different stacks.",
     },
-    // { desc: "Tech: C# (.netcore), Azure DevOps (CI/CD), Key Vault." },
   ];
 
   const workExperience_southworks = [
@@ -31,7 +28,6 @@ export default function Timeline() {
     },
     { desc: "UI/UX design of the majority of the MS Teams extension." },
     { desc: "Created functional prototype (React) for UI/UX demo." },
-    // { desc: "Tech: Azure (VM, Topics), GStreamer, C#, React, Typescript." },
   ];
 
   const workExperience_registro = [
@@ -42,7 +38,6 @@ export default function Timeline() {
       desc: "Developed a flowchart design tool for modeling flows of documents and approvals, linked with Real State data and filling locations.",
     },
     { desc: "Coach junior and semi-senior developers." },
-    // { desc: "Tech: .NET C# (C wrappers, C#, WPF, and SQL Server." },
   ];
 
   const workExperience_exet = [
@@ -53,9 +48,6 @@ export default function Timeline() {
     {
       desc: "Tasks: Analysis, investigation, interviews, design, programming.",
     },
-    // {
-    //   desc: "Tech: Oracle Weblogic, Oracle Databases, .NET C#, and SQL server integration services (SSIS).",
-    // },
   ];
 
   const workExperience_bank_cba = [
@@ -65,14 +57,10 @@ export default function Timeline() {
     {
       desc: "Performed several tasks of maintenance of existing applications, and backend operations.",
     },
-    // {
-    //   desc: "Tech: .NET C#, VB.NET, ASP.NET, MVC, SQL Server, Oracle, SSIS, Web Services",
-    // },
   ];
 
   const workExperience_hka = [
     { desc: "Maintained legacy Bank and Financial software." },
-    // { desc: "Tech: ASP Classic, SQL Server, Web Services." },
   ];
 
   const workExperience_hp = [
@@ -110,9 +98,6 @@ export default function Timeline() {
     {
       desc: "Provided onsite consulting about .NET / Oracle, for the ERP system of the company.",
     },
-    // {
-    //   desc: "Tech: Asp.NET, C#, Asp classic, SQL Server, Oracle, SSIS, Web Services.",
-    // },
   ];
 
   const workExperience_gruppoit = [
@@ -138,7 +123,6 @@ export default function Timeline() {
     {
       desc: "Developed a J2EE web-based system to measure technical indicators and collaborate in diagnostics of patients with potential neuropsychological problems.",
     },
-    // { desc: "Tech: J2EE, IBM WebSphere, IBM DB/2." },
   ];
 
 
@@ -148,37 +132,21 @@ export default function Timeline() {
         <div className="flex flex-col items-center mr-4">
           <div>
             <div className="flex items-center justify-center w-12 h-8 border rounded-md">
-              <h1 className="mx-auto font-semibold text-lg text-gray-600">
+              <h1 className="mx-auto font-semibold text-lg text-accent">
                 2022
               </h1>
             </div>
           </div>
-          <div className="w-px h-full bg-gray-300"></div>
+          <div className="w-px h-full bg-red"></div>
         </div>
-        <div className="order-1 bg-neutral-400 rounded-lg w-full px-4 py-4 border mb-4 bg-secondary-light">
+        <div className="order-1 rounded-lg w-full px-4 py-4 border mb-4 bg-secondary-dark">
           <p className="mb-2 text-xl font-bold text-gray-600">TechGenies</p>
           {/* chips start */}
           <div className="container mx-auto my-1 p-0 flex flex-wrap">
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              .netcore
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-                react
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              Azure
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              Tailwind CSS
-              </div>
-            </div>
+            <Pill text=".netcore" />
+            <Pill text="React" />
+            <Pill text="Azure" />
+            <Pill text="Tailwind CSS" />
           </div>
           {/* chips end */}
 
@@ -221,21 +189,9 @@ export default function Timeline() {
           <p className="mb-2 text-xl font-bold text-gray-600">Flux IT</p>
           {/* chips start */}
           <div className="container mx-auto my-1 p-0 flex flex-wrap">
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              netcore
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-                KeyVault
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-                Microservices
-              </div>
-            </div>
+            <Pill text=".netcore" />
+            <Pill text="KeyVault" />
+            <Pill text="Microservices" />
           </div>
           {/* chips end */}
 
@@ -266,28 +222,12 @@ export default function Timeline() {
           <p className="mb-2 text-xl font-bold text-gray-600">SOUTHWORKS</p>
           {/* chips start */}
           <div className=" mx-auto my-1 p-0 flex flex-wrap">
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              .netcore
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-                Azure
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-                React
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-                TypeScript
-              </div>
-            </div>
+            <Pill text=".netcore" />
+            <Pill text="Azure" />
+            <Pill text="React" />
+            <Pill text="TypeScript" />
           </div>
-          {/* chips end */}          
+          {/* chips end */}
           <p className="text-text-on-secondary">
             <WorkExperienceCard
               title="Senior Software Developer / UI-UX Designer"
@@ -317,21 +257,9 @@ export default function Timeline() {
           </p>
           {/* chips start */}
           <div className="container mx-auto my-1 p-0 flex flex-wrap">
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              C#
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-                WPF
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-                C Wrappers
-              </div>
-            </div>
+            <Pill text="C#" />
+            <Pill text="WPF" />
+            <Pill text="C Wrappers" />
           </div>
           {/* chips end */}
           <p className="text-text-on-secondary">
@@ -362,23 +290,11 @@ export default function Timeline() {
           <p className="mb-2 text-xl font-bold text-gray-600">Exet S.R.L.</p>
           {/* chips start */}
           <div className="container mx-auto my-1 p-0 flex flex-wrap">
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              Oracle
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-                Oracle Service Bus
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-                MS SQL Server
-              </div>
-            </div>
+            <Pill text="Oracle" />
+            <Pill text="Oracle Service Bus" />
+            <Pill text="MS SQL Server" />
           </div>
-          {/* chips end */}     
+          {/* chips end */}
           <p className="text-text-on-secondary">
             <WorkExperienceCard
               title="Senior Software Developer"
@@ -408,26 +324,10 @@ export default function Timeline() {
           </p>
           {/* chips start */}
           <div className="container mx-auto my-1 p-0 flex flex-wrap">
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              C#
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-                MS SQL Server
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              VB.NET
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              Oracle
-              </div>
-            </div>
+            <Pill text="C#" />
+            <Pill text="MS SQL Server" />
+            <Pill text="VB.NET" />
+            <Pill text="Oracle" />
           </div>
           {/* chips end */}
           <p className="text-text-on-secondary">
@@ -459,21 +359,9 @@ export default function Timeline() {
           </p>
           {/* chips start */}
           <div className="container mx-auto my-1 p-0 flex flex-wrap">
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              ASP Classic
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-                MS SQL Server
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              Web Services
-              </div>
-            </div>
+            <Pill text="ASP Classic" />
+            <Pill text="MS SQL Server" />
+            <Pill text="Web Services" />
           </div>
           {/* chips end */}
 
@@ -498,7 +386,7 @@ export default function Timeline() {
               </h1>
             </div>
           </div>
-          
+
           <div className="w-px h-full bg-gray-300"></div>
         </div>
         <div className="order-1 bg-neutral-400 rounded-lg w-full px-4 py-4 border mb-4">
@@ -507,26 +395,10 @@ export default function Timeline() {
           </p>
           {/* chips start */}
           <div className="container mx-auto my-1 p-0 bg-white flex flex-row">
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              C#
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-                ETL
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              MS SQL Server
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              J2EE
-              </div>
-            </div>
+            <Pill text="C#" />
+            <Pill text="ETL" />
+            <Pill text="MS SQL Server" />
+            <Pill text="J2EE" />
           </div>
           {/* chips end */}
           <p className="text-text-on-secondary">
@@ -538,7 +410,7 @@ export default function Timeline() {
               details={workExperience_hp}
             />
           </p>
-          
+
         </div>
       </div>
 
@@ -559,23 +431,11 @@ export default function Timeline() {
           <p className="mb-2 text-xl font-bold text-gray-600">AR Consultores</p>
           {/* chips start */}
           <div className="container mx-auto my-1 p-0 flex flex-wrap">
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              ASP Classic
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-                MS SQL Server
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              Web Services
-              </div>
-            </div>
+            <Pill text="ASP Classic" />
+            <Pill text="MS SQL Server" />
+            <Pill text="Web Services" />
           </div>
-          {/* chips end */}          
+          {/* chips end */}
           <p className="text-text-on-secondary">
             <WorkExperienceCard
               title="Software Developer"
@@ -603,28 +463,12 @@ export default function Timeline() {
           <p className="mb-2 text-xl font-bold text-gray-600">Gruppo IT</p>
           {/* chips start */}
           <div className="container mx-auto my-1 p-0 flex flex-wrap">
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              ASP.net
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-                MS SQL Server
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              XML
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              GDI+
-              </div>
-            </div>
+            <Pill text="ASP.net" />
+            <Pill text="MS SQL Server" />
+            <Pill text="XML" />
+            <Pill text="GDI+" />
           </div>
-          {/* chips end */}          
+          {/* chips end */}
           <p className="text-text-on-secondary">
             <WorkExperienceCard
               title="Software Developer"
@@ -654,28 +498,12 @@ export default function Timeline() {
           </p>
           {/* chips start */}
           <div className="container mx-auto my-1 p-0 flex flex-wrap">
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              J2EE
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-                IBM DB/2
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              WebSphere
-              </div>
-            </div>
-            <div className="flex justify-center items-center m-1 px-2 py-1 border border-gray-300 rounded-full bg-secondary-light text-base text-text-on-secondary font-medium">
-              <div className="flex-initial max-w-full leading-none text-xs font-normal">
-              XML
-              </div>
-            </div>
+            <Pill text="J2EE" />
+            <Pill text="IBM DB/2" />
+            <Pill text="WebSphere" />
+            <Pill text="XML" />
           </div>
-          {/* chips end */}              
+          {/* chips end */}
           <p className="text-text-on-secondary text-base font-normal">
             <WorkExperienceCard
               title="Junior Researcher"
