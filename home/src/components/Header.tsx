@@ -2,11 +2,13 @@ import { useEffect } from "react";
 import { applyTheme } from "../themes/utils";
 import baseTheme from "../themes/base";
 import darkTheme from "../themes/dark";
+import gitTheme from "../themes/git";
 
 // custom styled Button, careful
 import Button from "./Button";
 import LightModeIcon from '@mui/icons-material/LightMode';
 import NightlightIcon from '@mui/icons-material/Nightlight';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
 
 export default function Header() {
 	useEffect(() => {
@@ -39,6 +41,7 @@ export default function Header() {
 				<div className="flex gap-2 justify-between">
 					<Button color="secondary" onClick={() => applyTheme(baseTheme)}><LightModeIcon /></Button>
 					<Button color="secondary" onClick={() => applyTheme(darkTheme)}><NightlightIcon /></Button>
+					<Button color="secondary" onClick={() => applyTheme(gitTheme)}><Brightness4Icon /></Button>
 				</div>
 			</div>
 		</nav>

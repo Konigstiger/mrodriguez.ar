@@ -1,16 +1,20 @@
 import { createTheme } from "./utils";
 
 const darkTheme = createTheme({
-  primary: "#40415A",
-  primaryLight: "#54556E",
-  primaryDark: "#181B31",
+  primary: "#373737",
+  primaryLight: "#626262",
+  primaryDark: "#121212",
   secondary: "#4DB6AC",
   secondaryLight: "#82E9DE",
   secondaryDark: "#00867D",
-  textOnPrimary: "#FFFFFF",
-  textOnSecondary: "#000000",
-  accent: "#ED6146",
-  textBase: "FFFFFF",
+  tertiary: "#CCCCCC",
+  tertiaryLight: "#82E9DE",
+  tertiaryDark: "#00867D",  
+  textOnPrimary: "#717171",
+  textOnSecondary: "#588487",
+  accentPrimary: "#588487",
+  accentSecondary: "#717171",
+  textBase: "#FFFFFF",
 });
 
 export default darkTheme;

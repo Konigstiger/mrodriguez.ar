@@ -7,9 +7,13 @@ const baseTheme = createTheme({
   secondary: "#BBDEFB",
   secondaryLight: "#EEFFFF",
   secondaryDark: "#8AACC8",
+  tertiary: "#DDDDDD",
+  tertiaryLight: "#EEFFFF",
+  tertiaryDark: "#8AACC8",  
   textOnPrimary: "#000000",
   textOnSecondary: "#000000",
-  accent: "#047857",
+  accentPrimary: "#B569AF",
+  accentSecondary: "#047857",
   textBase: "#000000",
 });
 

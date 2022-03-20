@@ -17,16 +17,12 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="bg-primary-dark"> 
 
       <BioCard />
 
-      <div className="bg-primary">
+      <div className="bg-primary-light">
         <Articles />
-      </div>
-
-      <div className="bg-secondary text-text-on-secondary">
-        Text on Secondary
       </div>
 
       <StickyFooter />

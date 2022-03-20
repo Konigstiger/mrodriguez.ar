@@ -12,9 +12,13 @@ export function createTheme({
   secondary,
   secondaryLight,
   secondaryDark,
+  tertiary,
+  tertiaryLight,
+  tertiaryDark,
   textOnPrimary,
   textOnSecondary,
-  accent,
+  accentPrimary,
+  accentSecondary,
   textBase,
 }) {
   return {
@@ -24,9 +28,13 @@ export function createTheme({
     "--theme-secondary": secondary,
     "--theme-secondary-light": secondaryLight,
     "--theme-secondary-dark": secondaryDark,
+    "--theme-tertiary": tertiary,
+    "--theme-tertiary-light": tertiaryLight,
+    "--theme-tertiary-dark": tertiaryDark,
     "--theme-text-on-primary": textOnPrimary,
     "--theme-text-on-secondary": textOnSecondary,
-    "--theme-accent": accent,
+    "--theme-accent-primary": accentPrimary,
+    "--theme-accent-secondary": accentSecondary,
     "--theme-text-base": textBase,
   };
 }

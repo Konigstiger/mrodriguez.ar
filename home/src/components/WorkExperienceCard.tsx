@@ -1,49 +1,34 @@
 import "../index.css";
-import WorkExperienceRenderer from "./WorkExperienceRenderer";
+import Pill from "./Pill";
+import WorkExperienceDetailCard from "./WorkExperienceDetailCard";
 
-import ToggleButton from "@mui/material/ToggleButton";
+// continuar aqui, y que reciba las pills y details desde Timeline.
+export default function WorkExperienceCard({ company, title, dateStart, dateEnd, pills, details }) {
 
-import DateRangeIcon from "@mui/icons-material/DateRange";
-import BadgeIcon from "@mui/icons-material/Badge";
-
-import { useState } from "react";
-import { Typography } from "@mui/material";
-
-export default function WorkExperienceCard(props) {
-  const [selected, setSelected] = useState(false);
 
   return (
-    <div>
-      <div>
-        <div className="text-sm font-bold">
-          <BadgeIcon />
-          <span className="pl-1">{props.title}</span>
-        </div>
-        <div className="text-sm pb-4">
-          <DateRangeIcon />
-          <span className="pl-1">{props.dateStart} - {props.dateEnd}</span>
-        </div>
-      </div>
-      <div>
-        <ToggleButton
-          className="float-right"
-          size="small"
-          value="check"
-          selected={selected}
-          onChange={() => {
-            setSelected(!selected);
-          }}
-        >
-          {/* details */}
-          {(selected === true) ? "Close": "Details"}
-        </ToggleButton>
-      </div>
+    <div className="order-1 rounded-lg w-full px-4 py-4 border mb-4 border-primary-dark bg-primary">
+      <p className="mb-2 text-xl font-bold text-secondary">{company}</p>
 
-      {selected === true && (
-        <div>
-          <WorkExperienceRenderer items={props.details} />
-        </div>
-      )}
+      {/* pills start */}
+      <div className="container mx-auto my-1 p-0 flex flex-wrap">
+        {
+          pills.map((item, index) => (
+            <Pill text={item.name} />
+          ))
+        }
+      </div>
+      {/* pills end */}
+
+      <p className="text-text-on-secondary">
+        <WorkExperienceDetailCard
+          title={title}
+          company={company}
+          dateStart={dateStart}
+          dateEnd={dateEnd}
+          details={details}
+        />
+      </p>
     </div>
   );
 }
