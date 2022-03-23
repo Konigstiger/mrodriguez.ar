@@ -10,6 +10,7 @@ import baseTheme from "../themes/base";
 import darkTheme from "../themes/dark";
 
 import BioCard from "./BioCard";
+import Parent from "./Parent";
 
 export default function Home() {
   useEffect(() => {

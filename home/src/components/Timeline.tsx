@@ -1,9 +1,8 @@
 import "../index.css";
-import Pill from "./Pill";
 
 import WorkExperienceCard from "./WorkExperienceCard";
-// this import below will be removed later, and only remain WorkExperienceCard
-import WorkExperienceDetailCard from "./WorkExperienceDetailCard";
+import TimelineSection from "./TimelineSection";
+
 
 export default function Timeline() {
   const workExperience_tg = [
@@ -206,7 +205,6 @@ export default function Timeline() {
     <div className="w-full">
       <div className="flex">
 
-
         <div className="flex flex-col items-center mr-4">
           <div className="flex items-center justify-center w-12 h-8 border rounded-md border-primary">
             <h1 className="mx-auto font-semibold text-lg text-primary-light">
@@ -227,28 +225,7 @@ export default function Timeline() {
       </div>
 
       <div className="flex">
-        <div className="flex flex-col items-center mr-4">
-          <div>
-            <div className="flex items-center justify-center w-12 h-8 border rounded-md border-primary">
-              <h1 className="mx-auto font-bold text-lg text-primary-light">2021</h1>
-              {/* <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-6 h-6 text-gray-500"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M17 13l-5 5m0 0l-5-5m5 5V6"
-                />
-              </svg> */}
-            </div>
-          </div>
-          <div className="w-px h-full bg-primary"></div>
-        </div>
+        <TimelineSection year={2021} />
 
         <WorkExperienceCard
           company="Flux IT"
@@ -261,17 +238,7 @@ export default function Timeline() {
       </div>
 
       <div className="flex">
-        <div className="flex flex-col items-center mr-4">
-          <div>
-            <div className="flex items-center justify-center w-12 h-8 border rounded-md border-primary">
-              <h1 className="mx-auto font-semibold text-lg text-primary-light">
-                2021
-              </h1>
-            </div>
-          </div>
-          <div className="w-px h-full bg-primary"></div>
-        </div>
-
+        <TimelineSection year={2021} />
 
         <WorkExperienceCard
           company="SOUTHWORKS"
@@ -283,16 +250,8 @@ export default function Timeline() {
       </div>
 
       <div className="flex">
-        <div className="flex flex-col items-center mr-4">
-          <div>
-            <div className="flex items-center justify-center w-12 h-8 border rounded-md">
-              <h1 className="mx-auto font-semibold text-lg text-gray-600">
-                2019
-              </h1>
-            </div>
-          </div>
-          <div className="w-px h-full bg-gray-300"></div>
-        </div>
+
+        <TimelineSection year={2019} />
 
         <WorkExperienceCard
           company="Registro General de la Provincia de Cordoba"
@@ -305,17 +264,7 @@ export default function Timeline() {
       </div>
 
       <div className="flex">
-        <div className="flex flex-col items-center mr-4">
-          <div>
-            <div className="flex items-center justify-center w-12 h-8 border rounded-md">
-              <h1 className="mx-auto font-semibold text-lg text-gray-600">
-                2018
-              </h1>
-            </div>
-          </div>
-          {/* color de linea */}
-          <div className="w-px h-full bg-gray-300"></div>
-        </div>
+        <TimelineSection year={2018} />
 
         <WorkExperienceCard
           company="Exet S.R.L."
@@ -327,16 +276,7 @@ export default function Timeline() {
       </div>
 
       <div className="flex">
-        <div className="flex flex-col items-center mr-4">
-          <div>
-            <div className="flex items-center justify-center w-12 h-8 border rounded-md">
-              <h1 className="mx-auto font-semibold text-lg text-gray-600">
-                2017
-              </h1>
-            </div>
-          </div>
-          <div className="w-px h-full bg-gray-300"></div>
-        </div>
+        <TimelineSection year={2017} />
 
         <WorkExperienceCard
           company="Bank of Cordoba Province"
@@ -348,16 +288,7 @@ export default function Timeline() {
       </div>
 
       <div className="flex">
-        <div className="flex flex-col items-center mr-4">
-          <div>
-            <div className="flex items-center justify-center w-12 h-8 border rounded-md">
-              <h1 className="mx-auto font-semibold text-lg text-gray-600">
-                2015
-              </h1>
-            </div>
-          </div>
-          <div className="w-px h-full bg-gray-300"></div>
-        </div>
+        <TimelineSection year={2015} />
 
         <WorkExperienceCard
           company="Horovitz, Kravetz and associates"
@@ -370,16 +301,7 @@ export default function Timeline() {
       </div>
 
       <div className="flex">
-        <div className="flex flex-col items-center mr-4">
-          <div>
-            <div className="flex items-center justify-center w-12 h-8 border rounded-md">
-              <h1 className="mx-auto font-semibold text-lg text-gray-600">
-                2014
-              </h1>
-            </div>
-          </div>
-          <div className="w-px h-full bg-gray-300"></div>
-        </div>
+        <TimelineSection year={2014} />
 
         <WorkExperienceCard
           company="Hewlett-Packard"
@@ -391,16 +313,7 @@ export default function Timeline() {
       </div>
 
       <div className="flex">
-        <div className="flex flex-col items-center mr-4">
-          <div>
-            <div className="flex items-center justify-center w-12 h-8 border rounded-md">
-              <h1 className="mx-auto font-semibold text-lg text-gray-600">
-                2010
-              </h1>
-            </div>
-          </div>
-          <div className="w-px h-full bg-gray-300"></div>
-        </div>
+        <TimelineSection year={2010} />
 
         <WorkExperienceCard
           company="AR Consultores"
@@ -412,16 +325,7 @@ export default function Timeline() {
       </div>
 
       <div className="flex">
-        <div className="flex flex-col items-center mr-4">
-          <div>
-            <div className="flex items-center justify-center w-12 h-8 border rounded-md">
-              <h1 className="mx-auto font-semibold text-lg text-gray-600">
-                2008
-              </h1>
-            </div>
-          </div>
-          <div className="w-px h-full bg-gray-300"></div>
-        </div>
+        <TimelineSection year={2008} />
 
         <WorkExperienceCard
           company="Gruppo IT"
@@ -433,16 +337,7 @@ export default function Timeline() {
       </div>
 
       <div className="flex">
-        <div className="flex flex-col items-center mr-4">
-          <div>
-            <div className="flex items-center justify-center w-12 h-8 border rounded-md">
-              <h1 className="mx-auto font-semibold text-lg text-primary-light">
-                2002
-              </h1>
-            </div>
-          </div>
-          <div className="w-px h-full bg-primary"></div>
-        </div>
+        <TimelineSection year={2002} />
 
         <WorkExperienceCard
           company="UTN FRC"
