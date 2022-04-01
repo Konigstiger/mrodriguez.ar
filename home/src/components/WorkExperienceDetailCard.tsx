@@ -35,7 +35,7 @@ export default function WorkExperienceDetailCard(props) {
       </div>
       <div>
         <button
-          className="m-1 p-1 border-primary-dark float-right"
+          className="p-1 m-1 border-primary-dark float-right outline-none"
           onClick={() => {
             setSelected(!selected);
           }}
@@ -43,7 +43,7 @@ export default function WorkExperienceDetailCard(props) {
           {/* details */}
           {(selected === true) ?
             <div className="text-secondary-light"><CloseIcon /></div> :
-            <div className="border rounded-full px-2 hover:bg-accent-secondary"><ReadMoreIcon /> Details</div>}
+            <div className="border rounded px-2 bg-secondary hover:bg-accent-secondary skewedBtn"><ReadMoreIcon /><span> Details</span></div>}
         </button>
       </div>
 

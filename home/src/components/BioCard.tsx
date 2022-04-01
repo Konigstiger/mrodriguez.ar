@@ -7,9 +7,9 @@ import SocialMediaIcons from '../components/SocialMediaIcons';
 
 export default function BioCard({ ...rest }) {
     return (
-        <div className="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
+        <div className="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0 ">
             <div id="profile"
-                className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl opacity-90 mx-6 lg:mx-0 bg-tertiary">
+                className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl opacity-100 mx-6 lg:mx-0 bg-tertiary ">
 
                 <div className="p-4 md:p-12 text-center lg:text-left">
                     {/* Image for mobile view */}

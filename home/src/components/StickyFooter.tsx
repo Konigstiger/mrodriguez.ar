@@ -34,7 +34,7 @@ export default function StickyFooter() {
           //     : theme.palette.grey[800],
         }}
       >
-        <Container maxWidth="sm">
+        <Container maxWidth="sm" className='pt-5'>
           <Typography variant="body1" className='text-color-07-white-strong'>
             Mariano Rodriguez
           </Typography>

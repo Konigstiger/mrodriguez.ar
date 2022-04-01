@@ -9,8 +9,14 @@ import { applyTheme } from "../themes/utils";
 import baseTheme from "../themes/base";
 import darkTheme from "../themes/dark";
 
+//import portrait from "../images/mrodriguez-portrait-small.jpg";
+//import portraitDark from "../images/csharp.png";
+
 import BioCard from "./BioCard";
-import Parent from "./Parent";
+import SkewedCard from "./SkewedCard";
+
+import Skeletor from "./skeletons/Skeletor";
+
 
 export default function Home() {
   useEffect(() => {
@@ -18,13 +24,20 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="bg-primary-dark"> 
+    <div>
 
-      <BioCard />
+      <div>
+        <BioCard />
+      </div>
 
-      <div className="bg-primary-light">
+      <Skeletor />
+      <div className="bg-primary-light py-10">
         <Articles />
       </div>
+
+      <SkewedCard text="Woah. What do you think about this?" />
+
+
 
       <StickyFooter />
       {/* <Footer /> */}
