@@ -204,16 +204,7 @@ export default function Timeline() {
   return (
     <div className="w-full">
       <div className="flex">
-
-        <div className="flex flex-col items-center mr-4">
-          <div className="flex items-center justify-center w-12 h-8 border rounded-md border-primary">
-            <h1 className="mx-auto font-semibold text-lg text-primary-light">
-              2022
-            </h1>
-          </div>
-          <div className="w-px h-full bg-primary"></div>
-        </div>
-
+        <TimelineSection year={2022} />
         <WorkExperienceCard
           company="TechGenies"
           title="Senior Software Developer"
@@ -221,12 +212,10 @@ export default function Timeline() {
           dateEnd="Present"
           pills={pills_tg}
           details={workExperience_tg} />
-
       </div>
 
       <div className="flex">
         <TimelineSection year={2021} />
-
         <WorkExperienceCard
           company="Flux IT"
           title="Senior Software Developer"
@@ -239,7 +228,6 @@ export default function Timeline() {
 
       <div className="flex">
         <TimelineSection year={2021} />
-
         <WorkExperienceCard
           company="SOUTHWORKS"
           title="Senior Software Developer / UI-UX Designer"
@@ -252,7 +240,6 @@ export default function Timeline() {
       <div className="flex">
 
         <TimelineSection year={2019} />
-
         <WorkExperienceCard
           company="Registro General de la Provincia de Cordoba"
           title="Senior Software Developer"
@@ -265,7 +252,6 @@ export default function Timeline() {
 
       <div className="flex">
         <TimelineSection year={2018} />
-
         <WorkExperienceCard
           company="Exet S.R.L."
           title="Senior Software Developer"
@@ -277,7 +263,6 @@ export default function Timeline() {
 
       <div className="flex">
         <TimelineSection year={2017} />
-
         <WorkExperienceCard
           company="Bank of Cordoba Province"
           title="Senior Software Developer (outsourced)"
@@ -289,7 +274,6 @@ export default function Timeline() {
 
       <div className="flex">
         <TimelineSection year={2015} />
-
         <WorkExperienceCard
           company="Horovitz, Kravetz and associates"
           title="Software Developer (freelance)"
@@ -302,7 +286,6 @@ export default function Timeline() {
 
       <div className="flex">
         <TimelineSection year={2014} />
-
         <WorkExperienceCard
           company="Hewlett-Packard"
           title="Software Developer"
@@ -314,7 +297,6 @@ export default function Timeline() {
 
       <div className="flex">
         <TimelineSection year={2010} />
-
         <WorkExperienceCard
           company="AR Consultores"
           title="Software Developer"
@@ -326,7 +308,6 @@ export default function Timeline() {
 
       <div className="flex">
         <TimelineSection year={2008} />
-
         <WorkExperienceCard
           company="Gruppo IT"
           title="Software Developer"
@@ -338,7 +319,6 @@ export default function Timeline() {
 
       <div className="flex">
         <TimelineSection year={2002} />
-
         <WorkExperienceCard
           company="UTN FRC"
           title="Junior Researcher"
