@@ -43,7 +43,7 @@ export default function WorkExperienceDetailCard(props) {
           {/* details */}
           {(selected === true) ?
             <div className="text-secondary-light"><CloseIcon /></div> :
-            <div className="border rounded px-2 bg-secondary hover:bg-accent-secondary skewedBtn"><ReadMoreIcon /><span> Details</span></div>}
+            <div className="px-2 bg-secondary hover:bg-accent-secondary cutBtn"><ReadMoreIcon /><span> Details</span></div>}
         </button>
       </div>
 
