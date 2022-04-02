@@ -18,23 +18,23 @@ export default function BioCard({ ...rest }) {
             style={{ backgroundImage: `url(${portrait})` }}
           ></div>
 
-          <h1 className="text-3xl font-bold pt-8 lg:pt-0 text-text-on-secondary">
+          <h1 className="text-5xl font-bold lg:pt-0 text-text-on-secondary font-tangerine">
             Mariano Rodriguez
           </h1>
 
           <div className="mx-auto lg:mx-0 pt-3 border-b-2 border-secondary-dark opacity-25"></div>
 
-          <h3 className="pt-4 text-base font-semibold flex justify-center lg:justify-start text-text-on-primary">
+          <h3 className="pt-4 flex justify-center lg:justify-start text-text-on-primary font-poiretOne font-semibold text-xl">
             Senior Software Developer
           </h3>
 
-          <h4 className="pt-2 text-xs lg:text-sm flex items-center justify-center lg:justify-start text-text-on-primary">
+          <h4 className="pt-2 flex items-center justify-center lg:justify-start text-text-on-primary font-poiretOne font-semibold text-xl">
             Cordoba, Argentina
           </h4>
 
           <div className="mx-auto lg:mx-0 pt-3 border-b-2 border-secondary-dark opacity-25"></div>
 
-          <p className="pt-4 text-sm text-text-on-secondary">
+          <p className="pt-4 text-text-on-secondary font-belleza text-base">
             I'm a Software Developer experienced in several programming languages and industries.
           </p>
           <div className="lg:w-3/5">

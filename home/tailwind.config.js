@@ -4,6 +4,11 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        tangerine: ["Tangerine", "cursive"],
+        poiretOne: ["Poiret One", "cursive"],
+        belleza: ["Belleza", "sans-serif"],
+       },
       colors: {
         /* classic tailwind css custom colors */
         'color-01-purple-dark': '#40415A',    /* purple-dark */
@@ -36,8 +41,8 @@ module.exports = {
 
         "text-base": "var(--theme-text-base)",
 
-      }      
-    },
+      }
+    }
   },
   variants: {
     extend: {},
