@@ -5,6 +5,7 @@ import SocialMediaIcons from "../components/SocialMediaIcons";
 
 export default function BioCard({ ...rest }) {
   return (
+    <div>
     <div className="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0 ">
       <div
         id="profile"
@@ -17,17 +18,17 @@ export default function BioCard({ ...rest }) {
             style={{ backgroundImage: `url(${portrait})` }}
           ></div>
 
-          <h1 className="text-3xl font-bold pt-8 lg:pt-0 text-text-on-primary">
+          <h1 className="text-3xl font-bold pt-8 lg:pt-0 text-text-on-secondary">
             Mariano Rodriguez
           </h1>
 
           <div className="mx-auto lg:mx-0 pt-3 border-b-2 border-secondary-dark opacity-25"></div>
 
-          <h3 className="pt-4 text-base font-semibold flex justify-center lg:justify-start text-secondary-dark">
+          <h3 className="pt-4 text-base font-semibold flex justify-center lg:justify-start text-text-on-primary">
             Senior Software Developer
           </h3>
 
-          <h4 className="pt-2 text-xs lg:text-sm flex items-center justify-center lg:justify-start text-secondary-dark">
+          <h4 className="pt-2 text-xs lg:text-sm flex items-center justify-center lg:justify-start text-text-on-primary">
             Cordoba, Argentina
           </h4>
 
@@ -49,6 +50,7 @@ export default function BioCard({ ...rest }) {
           className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"
         />
       </div>
+    </div>
     </div>
   );
 }

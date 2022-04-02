@@ -2,24 +2,30 @@ import { useEffect } from "react";
 import { applyTheme } from "../themes/utils";
 import baseTheme from "../themes/base";
 import darkTheme from "../themes/dark";
-import gitTheme from "../themes/git";
 
 // custom styled Button, careful
 import Button from "./Button";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import NightlightIcon from "@mui/icons-material/Nightlight";
-import Brightness4Icon from "@mui/icons-material/Brightness4";
 
 export default function Header() {
   useEffect(() => {
     applyTheme(baseTheme);
-  }, []); 
+  }, []);
 
   return (
     <header>
-      <nav className="bg-gray-800 p-2 mt-0 fixed w-full z-10 top-0">
+      <nav className="bg-gray-800 p-1 mt-0 fixed w-full z-10 top-0">
         <div className="container mx-auto flex flex-wrap items-center">
-          <div className="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
+          <div className="flex w-full content-center justify-between md:w-1/2 md:justify-end">
+            <div className="flex gap-2 justify-between">
+              <Button color="secondary" onClick={() => applyTheme(baseTheme)}>
+                <LightModeIcon fontSize="small" />
+              </Button>
+              <Button color="secondary" onClick={() => applyTheme(darkTheme)}>
+                <NightlightIcon fontSize="small" />
+              </Button>
+            </div>
             <ul className="list-reset flex justify-between flex-1 md:flex-none items-center">
               <li className="mx-2">
                 <a
@@ -46,17 +52,6 @@ export default function Header() {
                 </a>
               </li>
             </ul>
-          </div>
-          <div className="flex gap-2 justify-between">
-            <Button color="secondary" onClick={() => applyTheme(baseTheme)}>
-              <LightModeIcon />
-            </Button>
-            <Button color="secondary" onClick={() => applyTheme(darkTheme)}>
-              <NightlightIcon />
-            </Button>
-            <Button color="secondary" onClick={() => applyTheme(gitTheme)}>
-              <Brightness4Icon />
-            </Button>
           </div>
         </div>
       </nav>

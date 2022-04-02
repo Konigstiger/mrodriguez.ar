@@ -3,9 +3,19 @@ export function applyTheme(theme) {
   Object.keys(theme).forEach((cssVar) => {
     root.style.setProperty(cssVar, theme[cssVar]);
   });
+
+  var sample = document.getElementById("mainContainer");
+  if (sample) {
+    if (theme.desc === "light") {
+      sample.className = "custom-img-light";
+    } else {
+      sample.className = "custom-img-dark";
+    }
+  }
 }
 
 export function createTheme({
+  desc,
   primary,
   primaryLight,
   primaryDark,
@@ -22,6 +32,7 @@ export function createTheme({
   textBase,
 }) {
   return {
+    "desc": desc,
     "--theme-primary": primary,
     "--theme-primary-light": primaryLight,
     "--theme-primary-dark": primaryDark,

@@ -1,6 +1,7 @@
 import { createTheme } from "./utils";
 
 const baseTheme = createTheme({
+  desc: "light",
   primary: "#9D9DBA",
   primaryLight: "#CECEEC",
   primaryDark: "#6E6F8A",
@@ -14,7 +15,7 @@ const baseTheme = createTheme({
   textOnSecondary: "#000000",
   accentPrimary: "#B569AF",
   accentSecondary: "#047857",
-  textBase: "#000000",
+  textBase: "#111111",
 });
 
 export default baseTheme;
