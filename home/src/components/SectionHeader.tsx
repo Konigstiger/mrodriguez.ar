@@ -2,8 +2,8 @@ import "../index.css";
 
 export default function SectionHeader({ title }) {
   return (
-    <div role="article"
-      className="bg-secondary text-text-on-secondary font-bold rounded px-4 py-2 mb-2 font-tangerine text-4xl">
+    <div
+      className="bg-secondary text-text-on-secondary font-bold rounded px-4 py-2 mb-2 font-poiretOne text-2xl">
       {title}
     </div>
   );

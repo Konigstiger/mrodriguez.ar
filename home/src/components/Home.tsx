@@ -10,6 +10,7 @@ import baseTheme from "../themes/base";
 
 import BioCard from "./BioCard";
 
+
 export default function Home() {
   useEffect(() => {
     applyTheme(baseTheme);
@@ -25,6 +26,7 @@ export default function Home() {
       <div className="bg-primary-light backgroundPattern">
         <Articles />
       </div>
+
 
       <StickyFooter />
     </div>
