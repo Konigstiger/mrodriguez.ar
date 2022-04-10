@@ -10,6 +10,7 @@ import baseTheme from "../themes/base";
 
 import BioCard from "./BioCard";
 
+import MisteryProgress from "./MisteryProgress";
 
 export default function Home() {
   useEffect(() => {
@@ -27,6 +28,15 @@ export default function Home() {
         <Articles />
       </div>
 
+      <div className="bg-white pb-1">
+        <div className="mx-6 border p-2 max-w-xs">
+          <MisteryProgress percentage={20} title="html" />
+          <MisteryProgress percentage={40} title="css" />
+          <MisteryProgress percentage={60} title="js" />
+          <MisteryProgress percentage={80} title="sql" />
+          <MisteryProgress percentage={100} title=".net" />
+        </div>
+      </div>
 
       <StickyFooter />
     </div>
