@@ -30,11 +30,11 @@ export default function Home() {
 
       <div className="bg-white pb-1">
         <div className="mx-6 border p-2 max-w-xs">
-          <ProgressCard n={1} title="Communications" />
-          <ProgressCard n={2} title="Teamwork" />
+          <ProgressCard n={3} title="Communications" />
+          <ProgressCard n={4} title="Teamwork" />
           <ProgressCard n={3} title="Adaptability" />
           <ProgressCard n={4} title="Problem solving" />
-          <ProgressCard n={5} title="Creativity" />
+          <ProgressCard n={4} title="Creativity" />
         </div>
         
         <div className="mx-6 border p-2 max-w-xs">

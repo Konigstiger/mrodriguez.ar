@@ -29,6 +29,18 @@ module.exports = {
         'color-06-white': '#E3F6FC',          /* white */
         'color-07-white-strong': '#DDDDDD',   /* white-strong*/
         
+        'progresslevel': {                    /* we can define levels */
+          100: '#f3e8ff',
+          200: '#e9d5ff',
+          300: '#d8b4fe',
+          400: '#c084fc',
+          500: '#a855f7',
+          600: '#9333ea',
+          700: '#7e22ce',
+          800: '#6b21a8',
+          900: '#581c87',
+        },
+
         /* new theme colors */
         primary: "var(--theme-primary)",
         "primary-light": "var(--theme-primary-light)",
@@ -37,11 +49,9 @@ module.exports = {
         "secondary-light": "var(--theme-secondary-light)",
         "secondary-dark": "var(--theme-secondary-dark)",
         
-        /* DEFINIR UN TERTIARY CLARO (casi blanco) O OSCURITO (dark) */
         tertiary: "var(--theme-tertiary)",
         "tertiary-light": "var(--theme-tertiary-light)",
         "tertiary-dark": "var(--theme-tertiary-dark)",
-
 
         "text-on-primary": "var(--theme-text-on-primary)",
         "text-on-secondary": "var(--theme-text-on-secondary)",
