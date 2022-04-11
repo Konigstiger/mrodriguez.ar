@@ -10,7 +10,7 @@ import baseTheme from "../themes/base";
 
 import BioCard from "./BioCard";
 
-import MisteryProgress from "./MisteryProgress";
+import ProgressCard from "./ProgressCard";
 
 export default function Home() {
   useEffect(() => {
@@ -30,12 +30,26 @@ export default function Home() {
 
       <div className="bg-white pb-1">
         <div className="mx-6 border p-2 max-w-xs">
-          <MisteryProgress percentage={20} title="html" />
-          <MisteryProgress percentage={40} title="css" />
-          <MisteryProgress percentage={60} title="js" />
-          <MisteryProgress percentage={80} title="sql" />
-          <MisteryProgress percentage={100} title=".net" />
+          <ProgressCard n={1} title="Communications" />
+          <ProgressCard n={2} title="Teamwork" />
+          <ProgressCard n={3} title="Adaptability" />
+          <ProgressCard n={4} title="Problem solving" />
+          <ProgressCard n={5} title="Creativity" />
         </div>
+        
+        <div className="mx-6 border p-2 max-w-xs">
+          <ProgressCard n={4} title=".NET" />
+          <ProgressCard n={4} title="HTML" />
+          <ProgressCard n={3} title="CSS" />
+          <ProgressCard n={4} title="C#" />
+          <ProgressCard n={3} title="JS" />
+
+          <ProgressCard n={3} title="React" />
+          <ProgressCard n={2} title="Python" />
+          <ProgressCard n={4} title="SQL" />
+
+        </div>
+
       </div>
 
       <StickyFooter />
