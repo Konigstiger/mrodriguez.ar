@@ -48,6 +48,15 @@ export default function Home() {
           <ProgressCard n={2} title="Python" />
           <ProgressCard n={4} title="SQL" />
 
+          <ProgressCard n={2} title="Non Relational Databases" />
+          <ProgressCard n={2} title="J2EE" />
+          <ProgressCard n={3} title="Azure" />
+          <ProgressCard n={1} title="AWS" />
+          <ProgressCard n={5} title="WinForms" />
+          <ProgressCard n={5} title="Visual Basic 6" />
+          <ProgressCard n={3} title="Graphic Design" />
+          <ProgressCard n={2} title="3D Modeling" />
+          <ProgressCard n={3} title="UI/UX Prototyping" />
         </div>
 
       </div>

@@ -8,11 +8,8 @@ import DateRangeIcon from "@mui/icons-material/DateRange";
 import BadgeIcon from "@mui/icons-material/Badge";
 
 import { useState } from "react";
-import { Typography } from "@mui/material";
 
-import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
-import InfoIcon from '@mui/icons-material/Info';
 import ReadMoreIcon from '@mui/icons-material/ReadMore';
 
 export default function WorkExperienceDetailCard(props) {
