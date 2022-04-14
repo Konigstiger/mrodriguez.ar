@@ -7,11 +7,10 @@ export default function Articles() {
     // todo: meter esta classname para centrar
     // grid place-items-center h-screen
     <div
-      className="
-      py-6
-      mx-6
-      grid place-items-center
-     "
+    //   className="
+    //   flex flex-col ml-0 pt-2 px-1 
+    //   sm:grid sm:gap-4 sm:grid-cols-4 sm:row-span-2
+    //  "
     >
       <div className="bg-primary-dark rounded-lg shadow-xl py-2 px-2 xs:min-w-full">
         <div>
@@ -57,7 +56,10 @@ export default function Articles() {
               </div>
             </div>
           </div>
-          <div className="accordion-item bg-primary-dark border border-gray-200">
+
+        </div>
+      </div>
+      <div className="accordion-item bg-primary-dark border border-gray-200">
             <h2 className="accordion-header mb-0" id="headingTwo">
               <button
                 className="
@@ -103,8 +105,6 @@ export default function Articles() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
     </div>
   );
 }
