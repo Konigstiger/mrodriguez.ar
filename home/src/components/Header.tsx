@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <header>
-      <div className="flex flex-wrap fixed w-full z-10 top-0 bg-primary-dark border border-primary">
+      <div className="flex flex-wrap fixed w-full z-10 top-0 bg-primary-dark border border-primary opacity-75">
         <div className="w-full px-4">
           <nav className="relative flex flex-wrap items-center justify-between py-0 bg-violet-500 rounded">
             <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">

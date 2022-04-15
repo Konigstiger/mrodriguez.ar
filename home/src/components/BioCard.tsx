@@ -18,7 +18,7 @@ export default function BioCard({ ...rest }) {
             style={{ backgroundImage: `url(${portrait})` }}
           ></div>
 
-          <h1 className="text-5xl font-bold lg:pt-0 text-text-on-secondary font-tangerine">
+          <h1 className="text-5xl font-bold lg:pt-0 text-text-on-secondary font-poiretOne">
             Mariano Rodriguez
           </h1>
 
@@ -36,6 +36,7 @@ export default function BioCard({ ...rest }) {
 
           <p className="pt-4 text-text-on-secondary font-belleza text-base">
             I'm a Software Developer experienced in several programming languages and industries.
+
           </p>
           <div className="lg:w-3/5">
           <SocialMediaIcons />
