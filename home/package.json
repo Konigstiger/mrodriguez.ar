@@ -8,6 +8,7 @@
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
     "@fontsource/roboto": "^4.5.3",
+    "@headlessui/react": "^1.5.0",
     "@mui/icons-material": "^5.4.2",
     "@mui/material": "^5.4.3",
     "@types/node": "^14.14.35",
