@@ -26,18 +26,32 @@ import workExperience_flux from "./data/workExperience_flux";
 import pills_flux from "./data/pills_flux";
 import workExperience_tg from "./data/workExperience_tg";
 import pills_tg from "./data/pills_tg";
+import workExperience_mk from "./data/workExperience_mk";
+import pills_mk from "./data/pills_mk";
 
 export default function Timeline() {
 
   return (
     <div className="w-full">
+
+      <div className="flex">
+        <TimelineSection year={2022} />
+        <WorkExperienceCard
+          company="MajorKey"
+          title="Senior Software Developer"
+          dateStart="May 2022"
+          dateEnd="Present"
+          pills={pills_mk}
+          details={workExperience_mk} />
+      </div>
+
       <div className="flex">
         <TimelineSection year={2022} />
         <WorkExperienceCard
           company="TechGenies"
           title="Senior Software Developer"
           dateStart="Nov 2021"
-          dateEnd="Present"
+          dateEnd="May 2022"
           pills={pills_tg}
           details={workExperience_tg} />
       </div>
