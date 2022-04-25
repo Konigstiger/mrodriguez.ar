@@ -6,11 +6,12 @@ import Pill from "./Pill";
 export default function SkillCard() {
   return (
     <div className="bg-primary-dark rounded p-2">
-      <SectionHeader title="Soft Skills" />
 
       {/* un div con padding */}
-      <div className="p-0">
+      <div>
         <div className="max-w-sm bg-primary-light opacity-100 border border-primary rounded p-2">
+          <SectionHeader title="Soft Skills" />
+
           <ProgressCard n={3} title="Communications" />
           <ProgressCard n={4} title="Teamwork" />
           <ProgressCard n={3} title="Adaptability" />
@@ -18,8 +19,9 @@ export default function SkillCard() {
           <ProgressCard n={4} title="Creativity" />
         </div>
 
-        <SectionHeader title="Tech Skills" />
         <div className="max-w-sm bg-primary-light border border-primary rounded opacity-100 p-2">
+          <SectionHeader title="Tech Skills" />
+
           <ProgressCard n={4} title=".NET" />
           <ProgressCard n={4} title="HTML" />
           <ProgressCard n={3} title="CSS" />
@@ -39,6 +41,7 @@ export default function SkillCard() {
           <ProgressCard n={3} title="Graphic Design" />
           <ProgressCard n={2} title="3D Modeling" />
           <ProgressCard n={3} title="UI/UX Prototyping" />
+
         </div>
 
         <div className="bg-primary-dark">
