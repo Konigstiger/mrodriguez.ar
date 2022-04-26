@@ -5,7 +5,7 @@ import Pill from "./Pill";
 
 export default function SkillCard() {
   return (
-    <div className="bg-primary-dark rounded p-2">
+    <div className="bg-primary-dark rounded p-0">
 
       {/* un div con padding */}
       <div id="SkillsSection">

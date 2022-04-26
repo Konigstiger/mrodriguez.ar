@@ -2,7 +2,7 @@ import ProgressSegment from "./ProgressSegment";
 
 export default function ProgressCard({ n, title }) {
   return (
-    <div className="relative py-1 mb-0">
+    <div className="relative py-1 pb-4">
       <div className="flex items-center justify-between">
         <div className="pb-1">
           <span

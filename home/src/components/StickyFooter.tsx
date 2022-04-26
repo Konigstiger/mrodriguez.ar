@@ -3,10 +3,10 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 
+import logo from "../images/rubber-duck.png";
 
 function Copyright() {
   return (
-    // <Typography variant="body2" color="text.secondary">
       <Typography variant="body2" className='text-color-06-white'>
       {'Copyright © '}
       <Link color="#AAAAAA" href="https://mrodriguez.ar/">
