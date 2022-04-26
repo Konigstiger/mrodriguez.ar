@@ -10,6 +10,17 @@ import darkTheme from "../themes/dark";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+  const [useDarkTheme, setUseDarkTheme] = useState(false);
+
+  const applyThemeBase = () => {
+    setUseDarkTheme(false);
+    applyTheme(baseTheme);
+  }
+
+  const applyThemeDark = () => {
+    setUseDarkTheme(true);
+    applyTheme(darkTheme)
+  }
   return (
     <div>
       <nav className="bg-gray-800 fixed w-full z-10 top-0">
@@ -25,43 +36,55 @@ function Nav() {
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <a
-                    className="px-3 py-2 flex items-center text-xs font-bold leading-snug text-white hover:opacity-75"
-                    href="https://blog.mrodriguez.ar/"
-                  >
-                    Blog
-                  </a>
+                <a
+                  href="#SkillsSection"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Skills
+                </a>
+                <a
+                  href="#WorkExperienceSection"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Work Experience
+                </a>
 
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Projects
-                  </a>
+                <a
+                  href="#InterestsSection"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Interests
+                </a>
 
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Reports
-                  </a>
+                <a
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  href="https://blog.mrodriguez.ar/"
+                >
+                  Blog
+                </a>
 
-                  <div>
-                    <Button
-                      color="secondary"
-                      onClick={() => applyTheme(baseTheme)}
-                    >
-                      <LightModeIcon fontSize="small" />
-                    </Button>
-                  </div>
-                  <div>
-                    <Button
-                      color="secondary"
-                      onClick={() => applyTheme(darkTheme)}
-                    >
-                      <NightlightIcon fontSize="small" />
-                    </Button>
-                  </div>
+                  {useDarkTheme &&
+                    <div>
+                      <Button
+                        color="secondary"
+                        onClick={applyThemeBase}
+                      >
+                        <LightModeIcon fontSize="small" />
+                      </Button>
+                    </div>
+                  }
+
+                  {!useDarkTheme &&
+                    <div>
+                      <Button
+                        color="secondary"
+                        onClick={applyThemeDark}
+                      >
+                        <NightlightIcon fontSize="small" />
+                      </Button>
+                    </div>
+                  }
+                  
                 </div>
               </div>
             </div>
@@ -124,6 +147,26 @@ function Nav() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <a
+                  href="#SkillsSection"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Skills
+                </a>
+                <a
+                  href="#WorkExperienceSection"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Work Experience
+                </a>
+
+                <a
+                  href="#InterestsSection"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Interests
+                </a>
+
                 <a
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   href="https://blog.mrodriguez.ar/"
@@ -131,50 +174,27 @@ function Nav() {
                   Blog
                 </a>
 
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Team
-                </a>
+                {useDarkTheme &&
+                    <div>
+                      <Button
+                        color="secondary"
+                        onClick={applyThemeBase}
+                      >
+                        <LightModeIcon fontSize="small" />
+                      </Button>
+                    </div>
+                  }
 
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Projects
-                </a>
-
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Calendar
-                </a>
-
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Reports
-                </a>
-
-                <div>
-                  <Button
-                    color="secondary"
-                    onClick={() => applyTheme(baseTheme)}
-                  >
-                    <LightModeIcon fontSize="small" />
-                  </Button>
-                </div>
-                <div>
-                  <Button
-                    color="secondary"
-                    onClick={() => applyTheme(darkTheme)}
-                  >
-                    <NightlightIcon fontSize="small" />
-                  </Button>
-                </div>
+                  {!useDarkTheme &&
+                    <div>
+                      <Button
+                        color="secondary"
+                        onClick={applyThemeDark}
+                      >
+                        <NightlightIcon fontSize="small" />
+                      </Button>
+                    </div>
+                  }
               </div>
             </div>
           )}
