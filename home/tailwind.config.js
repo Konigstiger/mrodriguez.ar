@@ -1,4 +1,5 @@
 // tailwind.config.js
+const plugin = require('tailwindcss/plugin');
 
 module.exports = {
   content: ['./src/**/*.{html,js}', './node_modules/tw-elements/dist/js/**/*.js'],
@@ -18,17 +19,17 @@ module.exports = {
         tangerine: ["Tangerine", "cursive"],
         poiretOne: ["Poiret One", "cursive"],
         belleza: ["Belleza", "sans-serif"],
-       },
+      },
       colors: {
         /* classic tailwind css custom colors */
         'color-01-purple-dark': '#40415A',    /* purple-dark */
         'color-02-purple-light': '#54556E',   /* purple-light */
         'color-03-green': '#2A8B9D',          /* green */
         'color-04-pinky': '#A973A2',          /* pinky */
-        'color-05-red': '#E02F35',            /* red */ 
+        'color-05-red': '#E02F35',            /* red */
         'color-06-white': '#E3F6FC',          /* white */
         'color-07-white-strong': '#DDDDDD',   /* white-strong*/
-        
+
         'progresslevel-purple': {                    /* we can define levels */
           100: '#f3e8ff',
           200: '#e9d5ff',
@@ -61,14 +62,14 @@ module.exports = {
         secondary: "var(--theme-secondary)",
         "secondary-light": "var(--theme-secondary-light)",
         "secondary-dark": "var(--theme-secondary-dark)",
-        
+
         tertiary: "var(--theme-tertiary)",
         "tertiary-light": "var(--theme-tertiary-light)",
         "tertiary-dark": "var(--theme-tertiary-dark)",
 
         "text-on-primary": "var(--theme-text-on-primary)",
         "text-on-secondary": "var(--theme-text-on-secondary)",
-        
+
         "accent-primary": "var(--theme-accent-primary)",
         "accent-secondary": "var(--theme-accent-secondary)",
 
@@ -81,6 +82,21 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('tw-elements/dist/plugin')
+    require('tw-elements/dist/plugin'),
+    plugin(function ({ addVariant, e, postcss }) {
+      addVariant('firefox', ({ container, separator }) => {
+        const isFirefoxRule = postcss.atRule({
+          name: '-moz-document',
+          params: 'url-prefix()',
+        });
+        isFirefoxRule.append(container.nodes);
+        container.append(isFirefoxRule);
+        isFirefoxRule.walkRules((rule) => {
+          rule.selector = `.${e(
+            `firefox${separator}${rule.selector.slice(1)}`
+          )}`;
+        });
+      });
+    }),
   ],
 }
