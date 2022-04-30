@@ -47,7 +47,7 @@ export default function SkillCard() {
         <div id="InterestsSection" className="bg-primary-dark">
           <SectionHeader title="Interests" />
 
-          <div className="container mx-auto my-0 bg-primary flex flex-wrap">
+          <div className="container mx-auto bg-primary flex flex-wrap p-2">
             <Pill text="UI/UX Design" />
             <Pill text="Software Architecture" />
             <Pill text="Good Practices" />
