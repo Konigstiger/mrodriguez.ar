@@ -9,7 +9,7 @@ export default function SkillCard() {
 
       {/* un div con padding */}
       <div id="SkillsSection">
-        <div  id="SoftSkillsSection" className="max-w-sm bg-primary-light opacity-100 border border-primary rounded p-2">
+        <div  id="SoftSkillsSection" className="bg-primary-light opacity-100 border border-primary rounded p-4">
           <SectionHeader title="Soft Skills" />
 
           <ProgressCard n={3} title="Communications" />
@@ -19,7 +19,7 @@ export default function SkillCard() {
           <ProgressCard n={4} title="Creativity" />
         </div>
 
-        <div id="TechSkillsSection" className="max-w-sm bg-primary-light border border-primary rounded opacity-100 p-2">
+        <div id="TechSkillsSection" className="bg-primary-light border border-primary rounded opacity-100 p-4">
           <SectionHeader title="Tech Skills" />
 
           <ProgressCard n={4} title=".NET" />
@@ -48,6 +48,7 @@ export default function SkillCard() {
           <SectionHeader title="Interests" />
 
           <div className="container mx-auto bg-primary flex flex-wrap p-2">
+            <Pill text="Reading" />
             <Pill text="UI/UX Design" />
             <Pill text="Software Architecture" />
             <Pill text="Good Practices" />

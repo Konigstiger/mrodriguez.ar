@@ -31,9 +31,10 @@ export default function Home() {
               sm:grid sm:gap-4 sm:grid-cols-2 sm:row-span-2
               "
         >
+        <SkillCard />
+
         <Articles />
 
-        <SkillCard />
         </div>
       </div>
 

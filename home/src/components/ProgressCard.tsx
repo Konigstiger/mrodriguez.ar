@@ -21,8 +21,10 @@ export default function ProgressCard({ n, title }) {
           </span>
         </div>
 
+        {/* text-purple-600 */}
+
         <div className="text-right">
-          <span className="text-xs font-semibold inline-block text-purple-600">
+          <span className="text-xs font-semibold inline-block text-accent-primary">
             {n}/5
           </span>
         </div>
