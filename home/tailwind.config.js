@@ -16,6 +16,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
+        oxanium: ["Oxanium", "cursive"],
         tangerine: ["Tangerine", "cursive"],
         poiretOne: ["Poiret One", "cursive"],
         belleza: ["Belleza", "sans-serif"],

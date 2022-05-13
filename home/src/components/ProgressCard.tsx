@@ -8,7 +8,7 @@ export default function ProgressCard({ n, title }) {
           <span
             className="
               text-xs
-              font-semibold
+              font-oxanium
               inline-block
               py-1
               px-2

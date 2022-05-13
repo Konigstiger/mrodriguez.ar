@@ -20,7 +20,7 @@ export default function WorkExperienceCard({ company, title, dateStart, dateEnd,
         }
       </div>
 
-      <p className="text-text-on-secondary">
+      <p className="text-text-on-secondary font-oxanium">
         <WorkExperienceDetailCard
           title={title}
           company={company}
