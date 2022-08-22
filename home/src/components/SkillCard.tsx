@@ -42,18 +42,31 @@ export default function SkillCard() {
           <ProgressCard n={2} title="3D Modeling" />
           <ProgressCard n={3} title="UI/UX Prototyping" />
 
+          <ProgressCard n={3} title="3D Modeling / Sculpting" />
+        </div>
+
+        <div id="KitSection" className="bg-primary-light border border-primary rounded opacity-100 p-4">
+          <SectionHeader title="Kit" />
+
+          <ProgressCard n={4} title="Visual Studio" />
+          <ProgressCard n={4} title="Visual Studio Code" />
+          <ProgressCard n={3} title="Photoshop" />
+          <ProgressCard n={2} title="Blender" />
         </div>
 
         <div id="InterestsSection" className="bg-primary-dark">
           <SectionHeader title="Interests" />
 
           <div className="container mx-auto bg-primary flex flex-wrap p-2">
-            <Pill text="Reading" />
-            <Pill text="UI/UX Design" />
-            <Pill text="Software Architecture" />
-            <Pill text="Good Practices" />
-            <Pill text="Mentoring" />
-            <Pill text="Videogames" />
+            <Pill id="1" text="Reading" />
+            <Pill id="2" text="UI/UX Design" />
+            <Pill id="3" text="Software Architecture" />
+            <Pill id="4" text="Good Practices" />
+            <Pill id="5" text="Mentoring" />
+            <Pill id="6" text="Videogames" />
+
+            <Pill id="7" text="Game Design" />
+            <Pill id="8" text="3D Modeling" />
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@ export default function WorkExperienceCard({ company, title, dateStart, dateEnd,
       <div className="container mx-auto my-1 p-0 flex flex-wrap">
         {
           pills.map((item, index) => (
-            <Pill text={item.name} />
+            <Pill id={index} text={item.name} />
           ))
         }
       </div>

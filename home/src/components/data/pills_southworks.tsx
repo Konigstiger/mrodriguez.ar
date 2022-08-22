@@ -1,8 +1,7 @@
 const pills_southworks = [
     { name: '.netcore', },
     { name: 'azure', },
-    { name: 'React', },
-    { name: 'React', },
+    { name: 'react', },
   ];
 
   export default pills_southworks;
