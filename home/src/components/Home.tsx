@@ -11,7 +11,6 @@ import baseTheme from "../themes/base";
 import BioCard from "./BioCard";
 import SkillCard from "./SkillCard";
 
-
 export default function Home() {
   useEffect(() => {
     applyTheme(baseTheme);
@@ -24,21 +23,16 @@ export default function Home() {
     >
       <BioCard />
 
-      <div className="bg-primary-light backgroundPattern">
+      <div className="bg-primary-light backgroundPattern ">
         <div
-        className="
-              flex flex-col ml-0 pt-2 px-1 
-              sm:grid sm:gap-4 sm:grid-cols-2 sm:row-span-2
-              "
+          className="
+              flex flex-col pt-4 xl:px-48
+              sm:grid sm:gap-4 sm:grid-cols-2 sm:row-span-2"
         >
-        <SkillCard />
-
-        <Articles />
-
+          <SkillCard />
+          <Articles />
         </div>
       </div>
-
-
 
       <StickyFooter />
     </div>

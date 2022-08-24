@@ -32,7 +32,7 @@ import pills_mk from "./data/pills_mk";
 export default function Timeline() {
 
   return (
-    <div className="w-full">
+    <div className="w-full/">
 
       <div className="flex">
         <TimelineSection year={2022} />

@@ -1,11 +1,10 @@
 import Timeline from "./Timeline";
-//import Pill from "./Pill";
 import SectionHeader from "./SectionHeader";
 
 export default function Articles() {
   return (
-    <div>
-      <div id="WorkExperienceSection" className="bg-primary-light rounded-lg shadow-xl py-2 px-2 xs:min-w-full">
+    <div id="WorkExperienceSection">
+      <div className="bg-primary-light  shadow-xl px-2 border border-primary rounded p-4">
         <SectionHeader title="Work Experience" />
         <Timeline />
       </div>
