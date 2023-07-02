@@ -95,7 +95,7 @@ function Nav() {
 
                   <a
                     className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                    href="https://blog.mrodriguez.ar/blog/"
+                    href="https://mrodriguez.ar/blog/"
                   >
                     Blog
                   </a>
@@ -184,7 +184,7 @@ function Nav() {
 
                 <a
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                  href="https://blog.mrodriguez.ar/blog/"
+                  href="https://mrodriguez.ar/blog/"
                 >
                   Blog
                 </a>

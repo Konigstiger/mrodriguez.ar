@@ -22,7 +22,7 @@ export default function HorizontalCard(props) {
                     <div className="text-gray-900 font-bold text-xl mb-2">{props.title}</div>
                     <p className="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
                 </div>
-                {/* Haceme componente! */}
+                {/* TODO: make me a component */}
                 <div className="flex items-center">
                     {/* <img className="w-10 h-10 rounded-full mr-4" src={portrait} alt="Avatar" /> */}
                     {/* <Avatar alt="Mariano Rodriguez" src={portrait} sx={{ width: 64, height: 64 }} /> */}

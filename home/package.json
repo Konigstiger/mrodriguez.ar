@@ -1,7 +1,7 @@
 {
   "name": "mrodriguez.ar",
-  "homepage": "https://mrodriguez.ar/home/",
-  "version": "0.1.0",
+  "homepage": "https://mrodriguez.ar/",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.1.1",

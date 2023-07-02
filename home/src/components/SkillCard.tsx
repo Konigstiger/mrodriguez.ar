@@ -12,7 +12,6 @@ export default function SkillCard() {
         <div  id="SoftSkillsSection" className="bg-primary-light opacity-100 border border-primary rounded p-4">
           <SectionHeader title="Soft Skills" />
 
-          <ProgressCard n={3} title="Communications" />
           <ProgressCard n={4} title="Teamwork" />
           <ProgressCard n={3} title="Adaptability" />
           <ProgressCard n={4} title="Problem solving" />
@@ -33,25 +32,14 @@ export default function SkillCard() {
           <ProgressCard n={4} title="SQL" />
 
           <ProgressCard n={2} title="Non Relational Databases" />
-          <ProgressCard n={2} title="J2EE" />
           <ProgressCard n={3} title="Azure" />
-          <ProgressCard n={1} title="AWS" />
-          <ProgressCard n={5} title="WinForms" />
           <ProgressCard n={5} title="Visual Basic 6" />
-          <ProgressCard n={3} title="Graphic Design" />
+          <ProgressCard n={4} title="Graphic Design" />
           <ProgressCard n={2} title="3D Modeling" />
           <ProgressCard n={3} title="UI/UX Prototyping" />
-
-          <ProgressCard n={3} title="3D Modeling / Sculpting" />
-        </div>
-
-        <div id="KitSection" className="bg-primary-light border border-primary rounded opacity-100 p-4">
-          <SectionHeader title="Kit" />
-
-          <ProgressCard n={4} title="Visual Studio" />
-          <ProgressCard n={4} title="Visual Studio Code" />
-          <ProgressCard n={3} title="Photoshop" />
-          <ProgressCard n={2} title="Blender" />
+          <ProgressCard n={3} title="Unity" />
+          <ProgressCard n={3} title="Adobe Photoshop" />
+          <ProgressCard n={4} title="Adobe Illustrator" />
         </div>
 
         <div id="InterestsSection" className="bg-primary-dark">
@@ -65,8 +53,11 @@ export default function SkillCard() {
             <Pill id="5" text="Mentoring" />
             <Pill id="6" text="Videogames" />
 
-            <Pill id="7" text="Game Design" />
-            <Pill id="8" text="3D Modeling" />
+            <Pill id="7" text="Game Development" />
+            <Pill id="8" text="Graphic Design" />
+            <Pill id="9" text="Unity" />
+            <Pill id="8" text="GameDev: Character Design" />
+            <Pill id="8" text="GameDev: Skeletal Animation" />
           </div>
         </div>
       </div>

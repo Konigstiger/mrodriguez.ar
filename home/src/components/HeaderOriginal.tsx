@@ -30,7 +30,7 @@ export default function HeaderOriginal() {
               <li className="mx-2">
                 <a
                   className="inline-block py-2 px-4 text-white no-underline p-12"
-                  href="https://blog.mrodriguez.ar/"
+                  href="https://mrodriguez.ar/blog/"
                 >
                   Blog
                 </a>
@@ -38,7 +38,7 @@ export default function HeaderOriginal() {
               <li className="mx-2">
                 <a
                   className="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-                  href="https://blog.mrodriguez.ar/contact"
+                  href="https://mrodriguez.ar/contact"
                 >
                   Contact
                 </a>
@@ -46,7 +46,7 @@ export default function HeaderOriginal() {
               <li className="mx-2">
                 <a
                   className="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-                  href="https://blog.mrodriguez.ar/resume"
+                  href="https://mrodriguez.ar/resume"
                 >
                   Resume
                 </a>
