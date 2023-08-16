@@ -46,18 +46,18 @@ export default function SkillCard() {
           <SectionHeader title="Interests" />
 
           <div className="container mx-auto bg-primary flex flex-wrap p-2">
-            <Pill id="1" text="Reading" />
-            <Pill id="2" text="UI/UX Design" />
-            <Pill id="3" text="Software Architecture" />
-            <Pill id="4" text="Good Practices" />
-            <Pill id="5" text="Mentoring" />
-            <Pill id="6" text="Videogames" />
+            <Pill key="1" text="Reading" />
+            <Pill key="2" text="UI/UX Design" />
+            <Pill key="3" text="Software Architecture" />
+            <Pill key="4" text="Good Practices" />
+            <Pill key="5" text="Mentoring" />
+            <Pill key="6" text="Videogames" />
 
-            <Pill id="7" text="Game Development" />
-            <Pill id="8" text="Graphic Design" />
-            <Pill id="9" text="Unity" />
-            <Pill id="8" text="GameDev: Character Design" />
-            <Pill id="8" text="GameDev: Skeletal Animation" />
+            <Pill key="7" text="Game Development" />
+            <Pill key="8" text="Graphic Design" />
+            <Pill key="9" text="Unity" />
+            <Pill key="10" text="GameDev: Character Design" />
+            <Pill key="11" text="GameDev: Skeletal Animation" />
           </div>
         </div>
       </div>
