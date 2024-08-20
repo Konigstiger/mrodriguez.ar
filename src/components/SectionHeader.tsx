@@ -1,4 +1,4 @@
-import "../index.css";
+import "../input.css";
 
 export default function SectionHeader({ title }) {
   return (

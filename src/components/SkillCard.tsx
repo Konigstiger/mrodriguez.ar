@@ -1,4 +1,3 @@
-import "../index.css";
 import ProgressCard from "./ProgressCard";
 import SectionHeader from "./SectionHeader";
 import Pill from "./Pill";

@@ -1,4 +1,3 @@
-import "../index.css";
 import Pill from "./Pill";
 import WorkExperienceDetailCard from "./WorkExperienceDetailCard";
 import SubSectionHeader from "./SubSectionHeader";

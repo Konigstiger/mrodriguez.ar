@@ -1,4 +1,4 @@
-import "../index.css";
+
 import TitledAlert from "./TitledAlert";
 
 export default function WorkExperienceRenderer({ items }) {

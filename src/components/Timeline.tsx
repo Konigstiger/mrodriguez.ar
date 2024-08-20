@@ -1,4 +1,3 @@
-import "../index.css";
 
 import WorkExperienceCard from "./WorkExperienceCard";
 import TimelineSection from "./TimelineSection";

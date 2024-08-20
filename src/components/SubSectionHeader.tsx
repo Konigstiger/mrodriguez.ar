@@ -1,4 +1,4 @@
-import "../index.css";
+
 
 export default function SubSectionHeader({ title }) {
   return (

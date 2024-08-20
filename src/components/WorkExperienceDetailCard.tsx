@@ -1,4 +1,3 @@
-import "../index.css";
 import WorkExperienceRenderer from "./WorkExperienceRenderer";
 
 import DateRangeIcon from "@mui/icons-material/DateRange";

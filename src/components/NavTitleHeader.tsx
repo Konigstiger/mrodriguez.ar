@@ -1,4 +1,3 @@
-import "../index.css";
 
 export default function NavTitleHeader({ title, subtitle }) {
   return (
